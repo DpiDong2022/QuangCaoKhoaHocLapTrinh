@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.kh-header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.kh-header .row div {
+    border: 2px solid white;
+}
+
+.kh-header a {
+    font-size: 1.2rem
+}
+
+.kh-header .main-menu li:not(.dropdown li) {
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* dropdown (from Dong)*/
+@keyframes down {
+    0% {
+        transform: translateX(80px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 50px;
+    min-width: 180px;
+    background-color: rgb(36, 71, 184);
+    z-index: 1;
+    animation: down 0.1s linear;
+    border-bottom: 8px solid rgb(220, 41, 41);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dropdown-content a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    background-color: rgb(36, 71, 184);
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    color: aliceblue;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    color: white;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main-menu a{
+    font-weight: 500;
+}
+
+.main-menu li a:hover {
+    color: red;
+}
+/* end dropdown */
+
+
+/* loding page (from Dong)*/
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s, visibility 0.5s;
+    background-color: rgb(242, 242, 248);
+    z-index: 1000;
+  }
+  
+  .loader--hidden{
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after{
+    height: 150px;
+    width: 150px;
+    content: "";
+    border: 12px solid lightblue;
+    border-bottom: 12px solid black;
+    border-radius: 50%;
+    animation: spin 0.5s ease infinite;
+  }
+  
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  /* end loading style */
