@@ -3,11 +3,22 @@
     margin: 0;
 }
 
+/* header menu */
 .kh-header {
     position: sticky;
     top: 0;
     z-index: 99;
     background-color: white;
+}
+
+.kh-header a {
+    font-size: 1.2rem
+}
+
+.kh-header .main-menu li:not(.dropdown li) {
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 li {
@@ -21,16 +32,7 @@ a {
 .kh-header .row div {
     border: 2px solid white;
 }
-
-.kh-header a {
-    font-size: 1.2rem
-}
-
-.kh-header .main-menu li:not(.dropdown li) {
-    padding: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
+/* end header menu */
 
 /* dropdown (from Dong)*/
 @keyframes down {
