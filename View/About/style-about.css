@@ -1,0 +1,12 @@
+
+.bg-image{
+    background-image: url('/wwwroot/Images/about_bg_markzuckerberg.webp');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+li{
+    background-color: transparent;
+}
