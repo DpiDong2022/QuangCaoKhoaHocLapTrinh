@@ -194,6 +194,8 @@ body {
 
 .category-item {
   position: relative;
+  height: 99%;
+  
 }
 
 .category-item>.category-item-content {
@@ -249,6 +251,11 @@ body {
 .child-category-item h4 {
   color: black;
   font-family: 'Nunito', sans-serif;
+}
+
+
+.child-category-item h4, .child-category-item p {
+  margin-bottom: 7px; 
 }
 /* course  */
 .container-dependence-course {
