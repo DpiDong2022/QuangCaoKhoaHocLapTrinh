@@ -10,3 +10,20 @@
 li{
     background-color: transparent;
 }
+
+.about-first-essay h1,
+.about-first-essay h3,
+.about-first-essay h5{
+    line-height: 40px;
+}
+
+.about-first-essay{
+    padding: 20px;
+}
+
+.giaithuong-container div{
+    text-align: center;
+    background-color: antiquewhite;
+    width: 300px;
+    border: 1px solid black;
+}
