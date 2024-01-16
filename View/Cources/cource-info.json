@@ -160,5 +160,14 @@
         "Language": "python",
         "Level": "basic",
         "Image": "Images/dataScience-python.jpg"
+    },
+    {
+        "Id": 18,
+        "Name": "Khóa học khoa học dữ liệu cơ bản với python",
+        "Price": "35.000.000 vnđ",
+        "MucDich": "data-science",
+        "Language": "python",
+        "Level": "basic",
+        "Image": "Images/dataScience-python.jpg"
     }
 ]
