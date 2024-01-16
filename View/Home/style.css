@@ -1,4 +1,4 @@
-/* main */
+main
 * {
   margin: 0;
   padding: 0;
@@ -220,7 +220,7 @@ body {
   justify-content: start;
   align-items: start;
   text-align: center;
-  background-color: #171f3221;
+  background-color: #ffffffd6;
   border-radius: 5px 5px 5px 5px;
   height: 60px;
 }
@@ -243,9 +243,10 @@ body {
 .child-category-item p {
   display: inline-block;
   font-weight: bold;
-  background-color: #171f3221;
+  background-color: #ffffffd6;
   border-radius: 5px 5px 5px 5px;
   width: 100px;
+  margin-bottom: 10px;
 }
 
 .child-category-item h4 {
@@ -253,7 +254,10 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 08622abaa8f67e668f22a5cc6ab1922baf626b89
 .child-category-item h4, .child-category-item p {
   margin-bottom: 7px; 
 }
@@ -419,7 +423,7 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 20px;
+  margin-top: 0px;
   background: #333;
 }
 
