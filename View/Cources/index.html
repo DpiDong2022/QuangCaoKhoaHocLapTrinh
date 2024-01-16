@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../wwwroot/dist/Bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/wwwroot/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="loading loader--hidden"></div>
+    <!--header-->
+    <div class="kh-header d-flex flex-row shadow">
+        <!--col 1-->
+        <div class="col-lg-2 container justify-content-center align-items-center" style="display: flex;">
+            <a href="../Home/index.html">
+                <img id="layout-header-icon" style="width: 8rem;" class="normal-logo" src="/wwwroot/Images/icon.jpg"
+                    alt="favor icon">
+            </a>
+        </div>
+        <!--col 2-->
+        <ul class="col-lg-8 d-flex flex-row main-menu m-0 p-0">
+            <li class="col-sm"><a href="../Home/index.html">HOME</a></li>
+            <li class="dropdown col-sm  m-0 align-items-center" style="display: flex;">
+                <a class="" href="../About/index.html">GIỚI THIỆU</a>
+                <ul class="dropdown-content" style="top: 80px;">
+                    <li><a href="../About/index.html">vỀ TRUNG TÂM</a> </li>
+                    <li><a href="/">FEED BACK</a> </li>
+                    <li><a href="/">Q&A</a> </li>
+                </ul>
+            </li>
+            <li class="col-sm"><a href="#">KHÓA HỌC</a></li>
+            <li class="col-sm"><a href="../Calendar/index.html">LỊCH KHAI GIẢNG</a></li>
+            <li class="col-sm"><a href="../Policy/">QUY CHẾ HỌC PHÍ</a></li>
+        </ul>
+        <!--col 3-->
+        <div class="col-lg-2 justify-content-center align-items-center" style="display: flex;">
+            <button type="button" class="btn"
+                style="width: 160px; font-size: large; background-color: #EE0000; color: aliceblue;"
+                data-bs-toggle="modal" data-bs-target="#contactModal">Liên hệ ngay</button>
+        </div>
+    </div>
+    <!--end header-->
+
+    <!-- Modal contact-->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Điền thông tin của bạn tại đây</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" style="font-size: 12px;"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col form-group mb-3">
+                                <label for="Name" class="form-label">Họ và tên (<span
+                                        style="color: red;">*</span>):</label>
+                                <input type="text" name="Name" class="form-control" required>
+                            </div>
+                            <div class="col mb-3">
+                                <label for="SDT" class="form-label">Số điện thoại (<span
+                                        style="color: red;">*</span>):</label>
+                                <input type="tel" name="SDT" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="Email" class="form-label">Email:</label>
+                            <input type="email" name="Email" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="Address" class="form-label">Địa chỉ:</label>
+                            <input type="text" name="Address" class="form-control"
+                                placeholder="Tỉnh/thành bạn đang sinh sống và làm việc?">
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn" data-toggle="modal"
+                                style="color: aliceblue; background-color: #EE0000;">Đăng ký</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end modal contact -->
+
+
+
+    <!--Main Content(code ở đây)-->
+    <div class="p-0 container justify-content-center align-items-center"
+        style="width: 60%; display: flex; height: 80px; position: relative;">
+        <input class="search-input" type="text" style="height:40px; width: 100%;"
+            placeholder="Search everything you want">
+        <i class="fa fa-search search-icon"></i>
+    </div>
+    <div class="container-fluid row" style="">
+
+        <!-- Category -->
+        <div class="column side category">
+            <div class="contain-category">
+                <h4>Filter</h4>
+                <!-- category 1 -->
+                <h5 class="category-group-name">Mục đích học</h5>
+                <div id="contain-mucdichhoc">
+                    <label for="">
+                        <input checked type="radio" value="all" name="MucDichHoc" id="">
+                        Tất cả
+                    </label>
+                    <label for="">
+                        <input type="radio" value="web" name="MucDichHoc" id="">
+                        Lập trình Web
+                    </label>
+                    <label for="">
+                        <input type="radio" value="mobile" name="MucDichHoc" id="">
+                        Lập trình di động
+                    </label>
+                    <label for="">
+                        <input type="radio" value="data-science" name="MucDichHoc" id="">
+                        Khoa học dữ liệu
+                    </label>
+                </div>
+                
+                <!-- category 2 -->
+                <h5 class="category-group-name">Ngôn ngữ lập trình</h5>
+                <div id="contain-language">
+                    <label for="">
+                        <input checked type="radio" value="all" name="Language" id="">
+                         Tất cả
+                    </label>
+                    <label for="">
+                        <input type="radio" value="python" name="Language" id="">
+                        Python
+                    </label>
+                    <label for="">
+                        <input type="radio" value="javascript" name="Language" id="">
+                        JavaScript
+                    </label>
+                    <label for="">
+                        <input type="radio" value="java" name="Language" id="">
+                        Java
+                    </label>
+                    <label for="">
+                        <input type="radio" value="c#" name="Language" id="">
+                        C#
+                    </label>
+                    <label for="">
+                        <input type="radio" value="flutter#" name="Language" id="">
+                        Flutter
+                    </label>
+                    <label for="">
+                        <input type="radio" value="kotlin#" name="Language" id="">
+                        Kotlin
+                    </label>
+                    <label for="">
+                        <input type="radio" value="html+css" name="Language" id="">
+                        Html + CSS
+                    </label>
+                </div>
+
+                <!-- category 3 -->
+                <h5 class="category-group-name">Cấp độ</h5>
+                <div id="contain-level">
+                    <label for="">
+                        <input checked type="radio" value="aria-labelledby" name="Level" id="">
+                        Tất cả
+                    </label>
+                    <label for="">
+                        <input type="radio" value="basic" name="Level" id="">
+                        Basic
+                    </label>
+                    <label for="">
+                        <input type="radio" value="medium" name="Level" id="">
+                        Medium
+                    </label>
+                    <label for="">
+                        <input type="radio" value="hithg" name="Level" id="">
+                        High
+                    </label>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="column cources">
+            <p><b>Khóa học</b></p>
+
+            <div class="category shadow" id="not-found" style="display: block; background-color: white;
+             height: 70px; text-align: center; font-size: 25px; display: none;">
+                Không tìm thấy khóa học
+            </div>
+
+            <div class="grid-container course-container">
+                <!-- danh sách khóa hocj ở đây -->
+            </div>
+        </div>
+    </div>
+    <!--end Main content-->
+
+
+
+    <!--Footer-->
+    <footer style="background-color: rgb(36, 71, 184);">
+        <div class="container-fluid px-4 pt-4 pb-3" style="color:white; width: 1200px;">
+            <h4 class="mb-4">CODETUS - Hệ thống đào tạo lập trình</h4>
+            <div>
+                <span><i class="fa fa-phone" style="margin-right: 23px; margin-bottom: 15px;"></i></span>
+                Hotline: 0333392123
+                <br>
+                <span><i class="fa fa-envelope-o" style="margin-right: 20px;"></i></li></span>
+                Email: daihoccongnghedonga@gmail.com
+            </div>
+            <hr>
+            <div style="font-size: 12px;" class="container-fluid">
+                <p style="display: flex;" class="justify-content-center align-items-center">Công ty CodeTus Việt Nam -
+                    MST: 0001203033066</p>
+                <p style="display: flex;" class="justify-content-center align-items-center mb-0">Địa chỉ: Phố Trịnh Văn
+                    Bô, phường Xuân Phương, quận Nam Từ Liêm, thành phố Hà Nội</p>
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
+
+
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="../../wwwroot/dist/Bootstrap/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="/wwwroot/JS/script.js"></script>
+    <script src="js.js"></script>
+
+</body>
+
+</html>

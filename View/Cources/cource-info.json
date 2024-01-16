@@ -1,0 +1,146 @@
+[
+    {
+        "Name": "Khóa học lập trình web trung bình với Html, Css",
+        "Price": "16.000.000 vnđ",
+        "MucDich": "web",
+        "Language": "html+css",
+        "Level": "medium",
+        "Image": "Images/html-css-course.jpg"
+    },
+    {
+        "Name": "Khóa học lập trình we trung bình với Python",
+        "Price": "17.000.000 vnđ",
+        "MucDich": "web",
+        "Language": "python",
+        "Level": "medium",
+        "Image": "Images/web-python.png"
+    },
+    {
+        "Name": "Khóa học lập trình web trung bình với Java",
+        "Price": "18.000.000 vnđ",
+        "MucDich": "web",
+        "Language": "java",
+        "Level": "medium",
+        "Image": "Images/web-java.jpg"
+    },
+    {
+        "Name": "Khóa học lập trình web cơ bản với Javascript",
+        "Price": "19.000.000 vnđ",
+        "MucDich": "web",
+        "Language": "javascript",
+        "Level": "basic",
+        "Image": "Images/web-js.jpg"
+    },
+    {
+        "Name": "Khóa học lập trình web cơ bản với C#",
+        "Price": "20.000.000 vnđ",
+        "MucDich": "web",
+        "Language": "c#",
+        "Level": "basic",
+        "Image": "Images/web-cs-Aspnet.png"
+    },
+    {
+        "Name": "Khóa học mất gốc nâng cao với C#",
+        "Price": "21.000.000 vnđ",
+        "MucDich": "",
+        "Language": "c#",
+        "Level": "high",
+        "Image": "Images/web-cs-Aspnet.png"
+    },
+    {
+        "Name": "Khóa học mất gốc trung bình với Java",
+        "Price": "22.000.000 vnđ",
+        "MucDich": "",
+        "Language": "java",
+        "Level": "medium",
+        "Image": "Images/web-java.jpg"
+    },
+    {
+        "Name": "Khóa học lập trình di động cơ bản với Flutter",
+        "Price": "23.000.000 vnđ",
+        "MucDich": "mobile",
+        "Language": "flutter",
+        "Level": "basic",
+        "Image": "Images/mobile-flutter.png"
+    },
+    {
+        "Name": "Khóa học lập trình di động cơ bản với Kotlin",
+        "Price": "24.000.000 vnđ",
+        "MucDich": "mobile",
+        "Language": "kotlin",
+        "Level": "basic",
+        "Image": "Images/mobile-kotlin.png"
+    },
+    {
+        "Name": "Khóa học lập trình di động cơ bản với Java",
+        "Price": "25.000.000 vnđ",
+        "MucDich": "mobile",
+        "Language": "java",
+        "Level": "basic",
+        "Image": "Images/mobile-java.jpg"
+    },
+    {
+        "Name": "Khóa học lập trình di động trung bình với python",
+        "Price": "26.000.000 vnđ",
+        "MucDich": "mobile",
+        "Language": "python",
+        "Level": "medium",
+        "Image": "Images/mobile-python.webp"
+    },
+    {
+        "Name": "Khóa học lập trình di động với",
+        "Price": "27.000.000 vnđ",
+        "MucDich": "mobile",
+        "Language": "c#",
+        "Level": "medium",
+        "Image": "Images/mobile-cs.jpg"
+    },
+    {
+        "Name": "Khóa học lập trình di động trung bình với Kotlin",
+        "Price": "28.000.000 vnđ",
+        "MucDich": "mobile",
+        "Language": "kotlin",
+        "Level": "medium",
+        "Image": "Images/mobile-kotlin.png"
+    },
+    {
+        "Name": "Khóa học lập trình di động cao cấp với Java",
+        "Price": "29.000.000 vnđ",
+        "MucDich": "",
+        "Language": "java",
+        "Level": "high",
+        "Image": "Images/mobile-java.jpg"
+    },
+    {
+        "Name": "Khóa học lập trình di động cho người mất gốc với python",
+        "Price": "30.000.000 vnđ",
+        "MucDich": "",
+        "Language": "python",
+        "Level": "medium",
+        "Image": "Images/mobile-python.webp"
+    },
+    {
+        "Name": "Khóa học khoa học dữ liệu trung bình với python",
+        "Price": "33.000.000 vnđ",
+        "MucDich": "data-science",
+        "Language": "python",
+        "Level": "medium",
+        "Image": "Images/datascience-python2.jpg"
+    },
+    {
+        "Name": "Khóa học khoa học dữ liệu cao cấp với python",
+        "Price": "34.000.000 vnđ",
+        "MucDich": "data-science",
+        "Language": "python",
+        "Level": "high",
+        "Image": "Images/datascience-python3.png"
+    },
+    {
+        "Name": "Khóa học khoa học dữ liệu cơ bản với python",
+        "Price": "35.000.000 vnđ",
+        "MucDich": "data-science",
+        "Language": "python",
+        "Level": "basic",
+        "Image": "Images/dataScience-python.jpg"
+    }
+]
