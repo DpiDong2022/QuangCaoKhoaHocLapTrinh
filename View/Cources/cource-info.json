@@ -1,5 +1,6 @@
 [
     {
+        "Id": 1,
         "Name": "Khóa học lập trình web trung bình với Html, Css",
         "Price": "16.000.000 vnđ",
         "MucDich": "web",
@@ -8,6 +9,7 @@
         "Image": "Images/html-css-course.jpg"
     },
     {
+        "Id": 2,
         "Name": "Khóa học lập trình we trung bình với Python",
         "Price": "17.000.000 vnđ",
         "MucDich": "web",
@@ -16,6 +18,7 @@
         "Image": "Images/web-python.png"
     },
     {
+        "Id": 3,
         "Name": "Khóa học lập trình web trung bình với Java",
         "Price": "18.000.000 vnđ",
         "MucDich": "web",
@@ -24,6 +27,7 @@
         "Image": "Images/web-java.jpg"
     },
     {
+        "Id": 4,
         "Name": "Khóa học lập trình web cơ bản với Javascript",
         "Price": "19.000.000 vnđ",
         "MucDich": "web",
@@ -32,6 +36,7 @@
         "Image": "Images/web-js.jpg"
     },
     {
+        "Id": 5,
         "Name": "Khóa học lập trình web cơ bản với C#",
         "Price": "20.000.000 vnđ",
         "MucDich": "web",
@@ -40,6 +45,7 @@
         "Image": "Images/web-cs-Aspnet.png"
     },
     {
+        "Id": 6,
         "Name": "Khóa học mất gốc nâng cao với C#",
         "Price": "21.000.000 vnđ",
         "MucDich": "",
@@ -48,6 +54,7 @@
         "Image": "Images/web-cs-Aspnet.png"
     },
     {
+        "Id": 7,
         "Name": "Khóa học mất gốc trung bình với Java",
         "Price": "22.000.000 vnđ",
         "MucDich": "",
@@ -56,6 +63,7 @@
         "Image": "Images/web-java.jpg"
     },
     {
+        "Id": 8,
         "Name": "Khóa học lập trình di động cơ bản với Flutter",
         "Price": "23.000.000 vnđ",
         "MucDich": "mobile",
@@ -64,6 +72,7 @@
         "Image": "Images/mobile-flutter.png"
     },
     {
+        "Id": 9,
         "Name": "Khóa học lập trình di động cơ bản với Kotlin",
         "Price": "24.000.000 vnđ",
         "MucDich": "mobile",
@@ -72,6 +81,7 @@
         "Image": "Images/mobile-kotlin.png"
     },
     {
+        "Id": 10,
         "Name": "Khóa học lập trình di động cơ bản với Java",
         "Price": "25.000.000 vnđ",
         "MucDich": "mobile",
@@ -80,6 +90,7 @@
         "Image": "Images/mobile-java.jpg"
     },
     {
+        "Id": 11,
         "Name": "Khóa học lập trình di động trung bình với python",
         "Price": "26.000.000 vnđ",
         "MucDich": "mobile",
@@ -88,6 +99,7 @@
         "Image": "Images/mobile-python.webp"
     },
     {
+        "Id": 12,
         "Name": "Khóa học lập trình di động với",
         "Price": "27.000.000 vnđ",
         "MucDich": "mobile",
@@ -96,6 +108,7 @@
         "Image": "Images/mobile-cs.jpg"
     },
     {
+        "Id": 13,
         "Name": "Khóa học lập trình di động trung bình với Kotlin",
         "Price": "28.000.000 vnđ",
         "MucDich": "mobile",
@@ -104,22 +117,25 @@
         "Image": "Images/mobile-kotlin.png"
     },
     {
+        "Id": 14,
         "Name": "Khóa học lập trình di động cao cấp với Java",
         "Price": "29.000.000 vnđ",
-        "MucDich": "",
+        "MucDich": "mobile",
         "Language": "java",
         "Level": "high",
         "Image": "Images/mobile-java.jpg"
     },
     {
+        "Id": 15,
         "Name": "Khóa học lập trình di động cho người mất gốc với python",
         "Price": "30.000.000 vnđ",
-        "MucDich": "",
+        "MucDich": "mobile",
         "Language": "python",
         "Level": "medium",
         "Image": "Images/mobile-python.webp"
     },
     {
+        "Id": 16,
         "Name": "Khóa học khoa học dữ liệu trung bình với python",
         "Price": "33.000.000 vnđ",
         "MucDich": "data-science",
@@ -128,6 +144,7 @@
         "Image": "Images/datascience-python2.jpg"
     },
     {
+        "Id": 17,
         "Name": "Khóa học khoa học dữ liệu cao cấp với python",
         "Price": "34.000.000 vnđ",
         "MucDich": "data-science",
@@ -136,6 +153,7 @@
         "Image": "Images/datascience-python3.png"
     },
     {
+        "Id": 18,
         "Name": "Khóa học khoa học dữ liệu cơ bản với python",
         "Price": "35.000.000 vnđ",
         "MucDich": "data-science",

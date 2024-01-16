@@ -92,12 +92,15 @@
 
 
     <!--Main Content(code ở đây)-->
+
+    <!-- searh box -->
     <div class="p-0 container justify-content-center align-items-center"
         style="width: 60%; display: flex; height: 80px; position: relative;">
-        <input class="search-input" type="text" style="height:40px; width: 100%;"
+        <input id="search-input" type="text" style="height:40px; width: 100%;"
             placeholder="Search everything you want">
-        <i class="fa fa-search search-icon"></i>
+        <i class="fa fa-search search-icon" onclick="Search()"></i>
     </div>
+
     <div class="container-fluid row" style="">
 
         <!-- Category -->
@@ -108,19 +111,19 @@
                 <h5 class="category-group-name">Mục đích học</h5>
                 <div id="contain-mucdichhoc">
                     <label for="">
-                        <input checked type="radio" value="all" name="MucDichHoc" id="">
+                        <input checked type="radio" value="all" name="MucDichHoc" id="" onclick="ChangeMucDichFilter('all')">
                         Tất cả
                     </label>
                     <label for="">
-                        <input type="radio" value="web" name="MucDichHoc" id="">
+                        <input type="radio" value="web" name="MucDichHoc" id="" onclick="ChangeMucDichFilter('web')">
                         Lập trình Web
                     </label>
                     <label for="">
-                        <input type="radio" value="mobile" name="MucDichHoc" id="">
+                        <input type="radio" value="mobile" name="MucDichHoc" id="" onclick="ChangeMucDichFilter('mobile')">
                         Lập trình di động
                     </label>
                     <label for="">
-                        <input type="radio" value="data-science" name="MucDichHoc" id="">
+                        <input type="radio" value="data-science" name="MucDichHoc" id="" onclick="ChangeMucDichFilter('data-science')">
                         Khoa học dữ liệu
                     </label>
                 </div>
@@ -129,35 +132,35 @@
                 <h5 class="category-group-name">Ngôn ngữ lập trình</h5>
                 <div id="contain-language">
                     <label for="">
-                        <input checked type="radio" value="all" name="Language" id="">
+                        <input checked type="radio" value="all" name="Language" id="" onclick="ChangeLanguageFilter('all')">
                          Tất cả
                     </label>
                     <label for="">
-                        <input type="radio" value="python" name="Language" id="">
+                        <input type="radio" value="python" name="Language" id="" onclick="ChangeLanguageFilter('python')">
                         Python
                     </label>
                     <label for="">
-                        <input type="radio" value="javascript" name="Language" id="">
+                        <input type="radio" value="javascript" name="Language" id="" onclick="ChangeLanguageFilter('javascript')">
                         JavaScript
                     </label>
                     <label for="">
-                        <input type="radio" value="java" name="Language" id="">
+                        <input type="radio" value="java" name="Language" id="" onclick="ChangeLanguageFilter('java')">
                         Java
                     </label>
                     <label for="">
-                        <input type="radio" value="c#" name="Language" id="">
+                        <input type="radio" value="c#" name="Language" id="" onclick="ChangeLanguageFilter('c#')">
                         C#
                     </label>
                     <label for="">
-                        <input type="radio" value="flutter#" name="Language" id="">
+                        <input type="radio" value="flutter" name="Language" id="" onclick="ChangeLanguageFilter('flutter')">
                         Flutter
                     </label>
                     <label for="">
-                        <input type="radio" value="kotlin#" name="Language" id="">
+                        <input type="radio" value="kotlin" name="Language" id="" onclick="ChangeLanguageFilter('kotlin')">
                         Kotlin
                     </label>
                     <label for="">
-                        <input type="radio" value="html+css" name="Language" id="">
+                        <input type="radio" value="html+css" name="Language" id="" onclick="ChangeLanguageFilter('html+css')">
                         Html + CSS
                     </label>
                 </div>
@@ -166,19 +169,19 @@
                 <h5 class="category-group-name">Cấp độ</h5>
                 <div id="contain-level">
                     <label for="">
-                        <input checked type="radio" value="aria-labelledby" name="Level" id="">
+                        <input checked type="radio" value="all" name="Level" id="" onclick="ChangeLevelFilter('all')">
                         Tất cả
                     </label>
                     <label for="">
-                        <input type="radio" value="basic" name="Level" id="">
+                        <input type="radio" value="basic" name="Level" id="" onclick="ChangeLevelFilter('basic')">
                         Basic
                     </label>
                     <label for="">
-                        <input type="radio" value="medium" name="Level" id="">
+                        <input type="radio" value="medium" name="Level" id="" onclick="ChangeLevelFilter('medium')">
                         Medium
                     </label>
                     <label for="">
-                        <input type="radio" value="hithg" name="Level" id="">
+                        <input type="radio" value="high" name="Level" id="" onclick="ChangeLevelFilter('high')">
                         High
                     </label>
                 </div>
@@ -199,6 +202,10 @@
             </div>
         </div>
     </div>
+
+     <!-- phan trang -->
+    <div id="staff_pagination"
+        class="list-group list-group-horizontal justify-content-center"></div>
     <!--end Main content-->
 
 

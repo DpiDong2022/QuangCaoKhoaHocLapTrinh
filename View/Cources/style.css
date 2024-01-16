@@ -88,6 +88,7 @@
     float: left;
     margin-bottom: 30px;
     cursor: pointer;
+    max-width: 320px;
 }
 
 .grid-item h5 {
@@ -121,6 +122,12 @@
 .grid-item:not(:hover) {
     transition-duration: 0.25s;
 }
+
+#staff_pagination button{
+    background-color: rgb(74, 74, 206);
+    color: white;
+    margin-bottom: 20px;
+  }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
