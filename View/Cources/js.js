@@ -54,10 +54,10 @@ function renderPageNumber(totalPag) {
     for (let index = 1; index <= TotalPage; index++) {
         if (index == CurrentPage) {
             pagination.innerHTML += `<button id="${index}" class="btn mx-1"` +
-                `onclick="changeCurrentPage(${index})" style="border:2px solid red">$${index}</button>`;
+                `onclick="changeCurrentPage(${index})" style="border:2px solid red">${index}</button>`;
         } else {
             pagination.innerHTML += `<button id="${index}" class="btn mx-1"` +
-                `onclick="changeCurrentPage(${index})">$${index}</button>`;
+                `onclick="changeCurrentPage(${index})">${index}</button>`;
         }
     }
 }
@@ -122,6 +122,7 @@ function LoadList(list) {
 
 function ChangeMucDichFilter(newOption) {
     if (newOption != MucDichFilter) {
+        CurrentPage = 1;
         MucDichFilter = newOption;
         LoadList(list_cources);
     }
@@ -130,12 +131,15 @@ function ChangeMucDichFilter(newOption) {
 function ChangeLanguageFilter(newOption) {
     if (newOption != LanguageFilter) {
         LanguageFilter = newOption
+        CurrentPage = 1;
         LoadList(list_cources);
+
     }
 }
 
 function ChangeLevelFilter(newOption) {
     if (newOption != LevelFilter) {
+        CurrentPage = 1;
         LevelFilter = newOption
         LoadList(list_cources);
     }

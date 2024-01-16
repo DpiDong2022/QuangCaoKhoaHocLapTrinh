@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../wwwroot/dist/Bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/vendors.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/wwwroot/CSS/style.css">
+</head>
+
+<body class="preloader-visible" data-barba="wrapper">
+    <div class="loading loader--hidden"></div>
+    <!--header-->
+    <div class="kh-header d-flex flex-row shadow">
+        <!--col 1-->
+        <div class="col-lg-2 container justify-content-center align-items-center" style="display: flex;">
+            <a href="../Home/index.html">
+                <img id="layout-header-icon" style="width: 8rem;" class="normal-logo" src="/wwwroot/Images/icon.jpg"
+                    alt="favor icon">
+            </a>
+        </div>
+        <!--col 2-->
+        <ul class="col-lg-8 d-flex flex-row main-menu m-0 p-0">
+            <li class="col-sm"><a href="../Home/index.html" style="color: black;">TRANG CHỦ</a></li>
+            <li class="dropdown col-sm  m-0 align-items-center" style="display: flex;">
+                <a class="" href="/View/About/index.html">GIỚI THIỆU</a>
+                <ul class="dropdown-content" style="top: 80px;">
+                    <li><a href="/View/About/index.html">vỀ TRUNG TÂM</a> </li>
+                    <li><a href="/View/QnA/index.html">Q&A</a> </li>
+                </ul>
+            </li>
+            <li class="col-sm"><a href="/View/Cources/index.html">KHÓA HỌC</a></li>
+            <li class="col-sm"><a href="/View/Calendar/index.html">LỊCH KHAI GIẢNG</a></li>
+            <li class="col-sm"><a href="/View/Policy/main.html">QUY CHẾ HỌC PHÍ</a></li>
+        </ul>
+        <!--col 3-->
+        <div class="col-lg-2 justify-content-center align-items-center" style="display: flex;">
+            <button type="button" class="btn"
+                style="width: 160px; font-size: large; background-color: #EE0000; color: aliceblue;"
+                data-bs-toggle="modal" data-bs-target="#contactModal">Liên hệ ngay</button>
+        </div>
+    </div>
+    <!--end header-->
+
+    <!-- Modal contact-->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Điền thông tin của bạn tại đây</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" style="font-size: 12px;"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col form-group mb-3">
+                                <label for="Name" class="form-label">Họ và tên (<span
+                                        style="color: red;">*</span>):</label>
+                                <input type="text" name="Name" class="form-control" required>
+                            </div>
+                            <div class="col mb-3">
+                                <label for="SDT" class="form-label">Số điện thoại (<span
+                                        style="color: red;">*</span>):</label>
+                                <input type="tel" name="SDT" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="Email" class="form-label">Email:</label>
+                            <input type="email" name="Email" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="Address" class="form-label">Địa chỉ:</label>
+                            <input type="text" name="Address" class="form-control"
+                                placeholder="Tỉnh/thành bạn đang sinh sống và làm việc?">
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn" data-toggle="modal"
+                                style="color: aliceblue; background-color: #EE0000;">Đăng ký</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end modal contact -->
+
+
+
+    <!--Main Content(code ở đây)-->
+    <!-- preloader start -->
+  <div class="preloader js-preloader">
+    <div class="preloader__bg"></div>
+  </div>
+  <!-- preloader end -->
+    <main class="main-content  ">
+
+        
+  
+    
+        <div class="content-wrapper  js-content-wrapper">
+
+          
+    
+    
+          <section class="page-header -type-1">
+            <div class="container">
+              <div class="page-header__content">
+                <div class="row justify-center text-center">
+                  <div class="col-auto">
+                    <div data-anim="slide-up delay-1">
+    
+                      <h1 class="page-header__title">Chúng tôi có thể giúp gì cho bạn ?</h1>
+    
+                    </div>
+    
+                    <div data-anim="slide-up delay-2">
+    
+                      <p class="page-header__text">Chúng tôi đang thực hiện sứ mệnh cung cấp các khóa học hấp dẫn, được tuyển chọn với mức giá hợp lý.</p>
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+    
+          <section class="layout-pb-lg">
+            <div data-anim-wrap class="container">
+              <div class="row justify-center text-center">
+                <div class="col-xl-6 col-lg-8">
+                  <form class="form-single-field -help" action="https://creativelayers.net/themes/educrat-html/post">
+                    <input type="text" placeholder="Enter a question, topic or keyword">
+                    <button class="button -purple-1 text-white" type="submit">
+                      <i class="icon-search text-20 mr-15"></i>
+                      Search
+                    </button>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </section>
+    
+          <section class="layout-pt-lg layout-pb-lg bg-light-4">
+            <div class="container">
+              <div class="row justify-center text-center">
+                <div class="col-xl-8 col-lg-9 col-md-11">
+    
+                  <div class="sectionTitle ">
+    
+                    <h2 class="sectionTitle__title ">Câu hỏi thường gặp.</h2>
+    
+                    <p class="sectionTitle__text ">Giải đáp những thắc mắc thường gặp của bạn về học lập trình và nghề nghiệp lập trình.</p>
+    
+                  </div>
+    
+    
+                  <div class="accordion -block text-left pt-60 lg:pt-40 js-accordion">
+    
+                    <p style="padding: 20px; font-family: 'Times New Roman', Times, serif; font-size: 30px;color: orangered;margin-top: 50px;">
+                      1. Về CodeTUS
+                  </p>
+                  
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">CODETUS là đơn vị nào??</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>CODETUS là hệ thống đào tạo lập trình hiện đại có cam kết việc làm dành cho mọi đối tượng từ người mới bắt đầu, sinh viên công nghệ thông tin đến các lập trình viên có tay nghề.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">CODETUS dạy gì?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Chương trình của CODETUS là chương trình đào tạo nghề lập trình chuyên nghiệp theo các công nghệ khác nhau như Java, PHP, Android, React… với kết quả đào tạo đầu ra đảm bảo học viên làm được sản phẩm, có việc làm ngay.</p>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">CODETUS có ở đâu?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>CODETUS hiện có cơ sở đào tạo tại địa chỉ: Phố Trịnh Văn Bô, phường Xuân Phương, quận Nam Từ Liêm, thành phố Hà Nội</p>
+                            
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Giảng viên CODETUS là ai?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Giảng viên của CODETUS là các anh chị có nhiều năm kinh nghiệm làm phát triển phần mềm và đào tạo lập trình. Mỗi khóa học CODETUS có giảng viên là chuyên gia của đúng lĩnh vực công nghệ được dạy trong khóa học.</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <p style="padding: 20px; font-family: 'Times New Roman', Times, serif; font-size: 30px;color: orangered;margin-top: 50px;">
+                      2. Chương trình – Khóa học
+                  </p>
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">CODETUS có những khoá học nào?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Hiện CODETUS có 2 khoá đào tạo lập trình viên chuyên nghiệp theo ngôn ngữ lập trình là khoá CGC Java và CGC PHP (PHP và JAVA hiện là 2 ngôn ngữ đang được lựa chọn nhiều và có nhiều đơn vị tuyển dụng nhất). Hoàn thành khóa học, học viên đủ khả năng đảm nhận mọi vị trí lập trình (back-end, front-end, full-stack) và được CODETUS cam kết giới thiệu việc làm ngay khi học xong.</p>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">CODETUS đào tạo có mấy tháng thì làm sao đảm bảo tôi có thể học được và làm được việc?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Chương trình tại CODETUS được thiết kế để huấn luyện các bạn chưa học gì hoặc mất căn bản lập trình, không làm được việc. CODETUS cam kết chất lượng với doanh nghiệp và cam kết việc làm với học viên. Do đó, phương pháp đào tạo của CODETUS đảm bảo học viên học được, làm được cho tới khi nhận được việc làm.</p>
+                          <p>– Chương trình được thiết kế và xây dựng riêng hoàn toàn bằng tiếng Việt cho đối tượng học viên mới bắt đầu học lập trình.</p>
+                          <p>– Mô hình huấn luyện Coding Bootcamp theo phương pháp kèm 1-1 và luyện tập liên tục với cường độ cao, đảm bảo học viên luôn được tư vấn, định hướng và hỗ trợ trong suốt quá trình học cho tới khi làm được việc và nắm chắc nghề trong tay.</p>
+                          <p>– Hệ thống phần mềm hỗ trợ học tập hiện đại, chỉ có ở CODETUS, cho phép học viên được luyện tập thực tế liên tục như hệ thống luyện code CODETUS Bob, hệ thống làm dự án CODETUS Project, hệ thống học trực tuyến và theo dõi lộ trình học tập CODETUS X…</p>
+                          <p>– Doanh nghiệp tham gia thiết kế chương trình đào tạo sát với chuẩn đầu ra, cùng CODETUS tổ chức các buổi seminar, techtalk cho học viên và tham gia các phiên đánh giá năng lực, tư vấn hướng nghiệp, tuyển dụng giúp học viên sẵn sàng cho việc đi làm ngay khi học xong.</p>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Full-stack, back-end, front-end là gì?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>1/ Full-stack thường được dùng kèm trong từ ghép full-stack developer, nói tới lập trình viên có khả năng đáp ứng công việc ở bấy kỳ tầng kỹ thuật nào trong công việc sản xuất phần mềm, ví dụ như làm việc với hạ tầng kiến trúc (phần cứng, hệ điều hành), làm việc với cơ sở dữ liệu, làm việc với mã lập trình ở back-end, làm việc với mã lập trình ở front-end…</p>
+                          <p>2/ Front-end nói tới phần mã tạo ra giao diện sử dụng.</p>
+                          <p>3/ Back-end nói tới phần mã đứng sau phục vụ cho hoạt động của mã ở front-end.</p>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Tôi không tự tin vào việc mình sẽ học được. CODETUS sẽ giúp tôi như thế nào?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Học lập trình khó là học sai cách. Đội ngũ sáng lập của CODETUS cùng các chuyên gia đã nghiên cứu và phát triển một chương trình học định hướng phát triển nghề nghiệp lâu dài. Khoá học cung cấp các kiến thức và công nghệ đáp ứng nhu cầu thực tế của doanh nghiệp. Trong quá trình học tập tại CODETUS, bạn được hỗ trợ trực tiếp từ các giảng viên, lập trình viên tại CODETUS và doanh nghiệp, tham gia vào các dự án phát triển phần mềm, giúp bạn rèn luyện kỹ năng làm việc, sẵn sàng gia nhập vào các vị trí lập trình viên tại doanh nghiệp.</p>
+                          
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <p style="padding: 20px; font-family: 'Times New Roman', Times, serif; font-size: 30px;color: orangered;margin-top: 50px;">
+                      2. Học phí
+                  </p>
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Học phí nộp như thế nào?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Học viên đăng ký khóa CGC lớp part-time ban ngày hoặc full-time có thể đóng học phí theo tháng (lúc nhập học yêu cầu đóng 2 tháng). Thời gian đóng trong vòng 1 tuần trước khi bắt đầu tháng học mới.</p>
+                          <p>Bạn có thể đến văn phòng CODETUS để nộp trực tiếp bằng tiền mặt hoặc chuyển khoản cho CODETUS.</p>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Thanh toán học phí cả khóa thì có được ưu đãi thêm gì không?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Giảm 5% cho học viên đóng học phí cả khóa.</p>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Ngoài tiền học phí ra còn mất tiền gì nữa không?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Ngoài học phí học viên sẽ cần nộp phí nhập học (500.000 vnđ), ngoài ra ko phải nộp thêm bất cứ phí nào khác. Học phí đã bao gồm học liệu, quyền truy cập và sử dụng các hệ thống của CODETUS, bộ student kit (áo, sổ, bình nước, thẻ học viên). Học viên tự trả tiền gửi xe tại địa điểm học theo hướng dẫn của CODETUS. Học viên tự trang bị laptop cho quá trình học tập suốt khoá học.</p>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Tôi có học thử được không?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Do chương trình đào tạo của CODETUS được tổ chức theo mô hình Coding Bootcamp với nhiều hoạt động nhóm và cá nhân trải dài cả ngày và cả tuần. Do đó, việc học thử trong 1 vài tiếng hoặc 1 vài buổi không mang lại đúng trải nghiệm như thực tế cho bạn.</p>
+                          <p>Khi bạn đến CODETUS bạn có thể tham quan các lớp học và trò chuyện với các bạn học viên, các huấn luyện viên để hỏi về phương pháp huấn luyện và hoạt động học tập thực tế tại CODETUS.</p>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <p style="padding: 20px; font-family: 'Times New Roman', Times, serif; font-size: 30px;color: orangered;margin-top: 50px;">
+                      4. Nghề nghiệp và Cam kết việc làm
+                  </p>
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Học xong chương trình tại CODETUS thì làm được gì?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Tùy thuộc vào loại công nghệ/ngôn ngữ bạn theo học (PHP, Java, .NET…) mà các công việc bạn có thể làm được sẽ khác nhau. Bạn có thể xem các sản phẩm của học viên CODETUS tại đây.</p>
+                          <p>Hoàn thành khóa học, Bạn sẽ được đào tạo toàn diện các kỹ năng nghề nghiệp và sẵn sàng làm việc ngay khi học xong ở các vị trí lập lập trình viên full-stack, back-end, front-end.</p>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Học xong chương trình tại CODETUS thì làm được gì?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Tùy thuộc vào loại công nghệ/ngôn ngữ bạn theo học (PHP, Java, .NET…) mà các công việc bạn có thể làm được sẽ khác nhau. Bạn có thể xem các sản phẩm của học viên CODETUS tại đây.</p>
+                          <p>Hoàn thành khóa học, Bạn sẽ được đào tạo toàn diện các kỹ năng nghề nghiệp và sẵn sàng làm việc ngay khi học xong ở các vị trí lập lập trình viên full-stack, back-end, front-end.</p>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Học xong chương trình tại CODETUS thì làm được gì?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Tùy thuộc vào loại công nghệ/ngôn ngữ bạn theo học (PHP, Java, .NET…) mà các công việc bạn có thể làm được sẽ khác nhau. Bạn có thể xem các sản phẩm của học viên CODETUS tại đây.</p>
+                          <p>Hoàn thành khóa học, Bạn sẽ được đào tạo toàn diện các kỹ năng nghề nghiệp và sẵn sàng làm việc ngay khi học xong ở các vị trí lập lập trình viên full-stack, back-end, front-end.</p>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Tôi sẽ được CODETUS giới thiệu việc làm hay phải tự xin việc?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>CODETUS không giới thiệu việc làm theo hình thức ấn định học viên chỉ được vào làm ở một đơn vị cụ thể nào có liên kết với CODETUS vì như vậy sẽ giới hạn cơ hội lựa chọn và của học viên. Học viên sẽ tự mình ứng tuyển và xin việc theo từng bước do CODETUS huấn luyện và yêu cầu.</p>
+                          <p>Học viên sẽ phải tuân thủ các yêu cầu trong chương trình huấn luyện của CODETUS, bao gồm cả nội dung ứng tuyển và xin việc. Trong module cuối cùng của chương trình đào tạo, học viên sẽ được huấn luyện các kỹ năng xin việc như làm CV, kỹ năng phỏng vấn, tư vấn định hướng nghề nghiệp 1-1… để sẵn sàng đi xin việc.</p>
+                          <p>Bắt đầu từ tháng học cuối cùng, học viên sẽ gửi CV đi các doanh nghiệp theo hướng dẫn và hỗ trợ của CODETUS và bắt đầu tham gia các phiên phỏng vấn tuyển dụng. Việc gửi CV và tham gia các vòng phỏng vấn sẽ thực hiện liên tục theo thực tế xét tuyển của các doanh nghiệp cho tới khi học viên nhận được việc (chậm nhất 45 ngày sau khi nhận chứng chỉ tốt nghiệp). Huấn luyện viên của CODETUS sẽ đồng hành trực tiếp cùng học viên trong quá trình học viên xin việc để đảm bảo học viên nhận được việc làm tốt nhất.</p>
+                          <p>Nếu sau 45 ngày từ ngày tốt nghiệp mà học viên vẫn không xin được việc thì CODETUS sẽ hoàn trả 100% học phí cho học viên.</p>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Học xong sẽ vào làm ở đâu?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Khi học xong bạn sẽ tham gia vào phiên phỏng vấn của các doanh nghiệp đăng ký tham gia chương trình tuyển dụng học viên của CODETUS.</p>
+                          <p>Bạn có thể tham khảo thông tin một số công ty đã tuyển dụng nhiều học viên của CODETUS tại đây.</p>
+                          <p>Ngoài ra, tùy thuộc vào đặc thù công nghệ của mỗi công ty và mỗi khóa học viên tốt nghiệp mà sẽ có các doanh nghiệp khác nhau tham gia vào các đợt tuyển dụng khác nhau.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Khi nào thì có thể đi làm?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Sau khi hoàn thành chương trình học và nhận chứng chỉ tốt nghiệp, học viên sẽ tham gia vào các phiên thi tuyển/phỏng vấn tuyển dụng doanh nghiệp do CODETUS sắp xếp; đồng thời chủ động nộp CV ứng tuyển vào doanh nghiệp mình mong muốn.</p>
+                          <p>Nếu quá 45 ngày, học viên vẫn chưa nhận được việc, CODETUS cam kết sẽ hoàn lại 100% học phí.</p>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Nếu tôi không xin được việc làm thì sao?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Nếu sau 45 ngày từ ngày tốt nghiệp mà học viên vẫn không xin được việc thì CODETUS sẽ hoàn trả 100% học phí cho học viên. Nếu học viên vẫn muốn tiếp tục nỗ lực xin việc mà không muốn nhận hoàn trả học phí thì CODETUS sẽ tiếp tục hỗ trợ học viên bổ sung kỹ năng và xin việc cho tới khi nhận được việc.</p>
+                          <p>Tuy nhiên, tới hiện tại thì 100% học viên CODETUS tốt nghiệp đều được nhận việc nên bạn không phải lo lắng gì về việc làm. Điều quan trọng là học viên phải nỗ lực tập trung và tuân thủ đầy đủ các yêu cầu học tập và huấn luyện của CODETUS để nắm chắc tay nghề và có mức lương tốt.</p>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">CODETUS có cam kết mức lương không?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>CODETUS cam kết việc làm chứ không cam kết mức lương vì độ dao động mức lương rất rộng, phụ thuộc vào năng lực và sự cố gắng của mỗi học viên. Thường các bạn học viên tốt nghiệp sẽ làm vị trí fresher (bắt đầu cho người mới làm  chưa có kinh nghiệm) với mức lương khởi điểm từ 5 – 10 triệu tùy theo năng lực của mỗi bạn. Những bạn đã từng đi làm lập trình trước khi học CODETUS thì khi đi làm mức lương có thể lên tới 10 – 15 triệu.</p>
+                          <p>Mức lương thấp nhất của học viên CODETUS (là người mới học từ đầu, chưa biết gì về lập trình trước khi học CODETUS) đã tốt nghiệp là 5 triệu. Mức lương cao nhất của học viên sau khi tốt nghiệp CODETUS là 15 triệu (học viên này đã từng đi làm lập trình 2 năm nhưng thiếu kiến thức nền tảng và tay nghề yếu nên đi học bài bản lại từ đầu).</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <p style="padding: 20px; font-family: 'Times New Roman', Times, serif; font-size: 30px;color: orangered;margin-top: 50px;">
+                      5. Lịch học
+                  </p>
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Lịch học và thời gian thế nào?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>1. Full-time: 6 tháng (Java)</p>
+                          <p>– 8 tiếng/ngày, 5 ngày/tuần</p>
+                            
+                          <p>– Từ 08h00 – 17h30 thứ 2 – thứ 6</p>
+                            
+                          <p>2. Part-time:</p>
+                          <p>2.1. Khoá lập trình Java</p>
+                            
+                          <p>– 12 tháng, 4 tiếng/buổi, 5 ngày/tuần</p>
+                            
+                          <p>– Từ 17h30 – 21h30 thứ 2 – thứ 6</p>
+                            
+                          <p>2.2. Khoá Tester</p>
+                            
+                          <p>– 3 tiếng/buổi, 3 buổi/tuần, vào khung giờ tối 3-5-7.</p>
+                            
+                          <p>2.3. Khoá luyện thi chứng chỉ AWS</p>
+                            
+                          <p>2.4. Khoá luyện thi chứng chỉ ISTQB</p>
+                            
+                          <p>2.5. Khoá học lập trình Python cho học sinh </p>
+                            
+                          <p>– 3 tháng, 2 tiếng/buổi, 3 buổi/tuần</p>
+                            
+                          <p>– Từ 18h00-20h00, thứ 3 -5-7 hàng tuần</p>
+                          
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Được nghỉ tối đa bao nhiêu buổi học?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Học viên được phép nghỉ không quá 10% tổng số buổi học. Nếu nghỉ quá thời gian quy định sẽ bị xem xét cho thôi học theo quy chế đào tạo của CODETUS, đồng thời CODETUS sẽ không thực hiện cam kết việc làm với học viên.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion__item">
+                      <div class="accordion__button">
+                        <div class="accordion__icon">
+                          <div class="icon" data-feather="plus"></div>
+                          <div class="icon" data-feather="minus"></div>
+                        </div>
+                        <span class="text-17 fw-500 text-dark-1">Một lớp học có bao nhiêu học viên?</span>
+                      </div>
+    
+                      <div class="accordion__content">
+                        <div class="accordion__content__inner">
+                          <p>Một lớp học có tối thiểu 15 học viên và tối đa là 25 học viên. Vì mô hình của CODETUS là đào tạo thực chiến 1-1 để đảm bảo học viên học được, làm được nên quy mô lớp học không quá đông.</p>
+                        </div>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+          
+           
+    
+        </div>
+      </main>
+      <!-- JavaScript -->
+  <script src="../../../unpkg.com/leaflet%401.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+    
+    <!--end Main content-->
+
+
+
+    <!--Footer-->
+    <footer style="background-color: rgb(36, 71, 184);">
+        <div class="container-fluid px-4 pt-4 pb-3" style="color:white; width: 1200px;">
+            <h4 style="color: white;" class="mb-4" >CODETUS - Hệ thống đào tạo lập trình</h4>
+            <div>
+                <span><i class="fa fa-phone" style="margin-right: 23px; margin-bottom: 15px;"></i></span>
+                Hotline: 0333392123
+                <br>
+                <span><i class="fa fa-envelope-o" style="margin-right: 20px;"></i></li></span>
+                Email: daihoccongnghedonga@gmail.com
+            </div>
+            <hr>
+            <div style="font-size: 12px;" class="container-fluid">
+                <p style="display: flex;" class="justify-content-center align-items-center">Công ty CodeTus Việt Nam -
+                    MST: 0001203033066</p>
+                <p style="display: flex;" class="justify-content-center align-items-center mb-0">Địa chỉ: Phố Trịnh Văn
+                    Bô, phường Xuân Phương, quận Nam Từ Liêm, thành phố Hà Nội</p>
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
+
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="../../wwwroot/dist/Bootstrap/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="/wwwroot/JS/script.js"></script>
+
+   
+</body>
+
+</html>

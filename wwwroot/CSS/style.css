@@ -149,3 +149,7 @@ a {
     }
   }
   /* end loading style */
+
+  body {
+    font-family: 'Roboto', sans-serif;
+}

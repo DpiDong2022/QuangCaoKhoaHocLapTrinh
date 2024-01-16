@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Nguyễn Văn Tưởng">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  <title>Document</title>
+  <link rel="stylesheet" href="/wwwroot/dist/Bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/wwwroot/CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="/View/LichKhaiGiang/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/View/Policy/style.css">
+
+
+</head>
+
+</head>
+
+<body>
+
+  <div class="loading loader--hidden"></div>
+  <!--header-->
+  <div class="kh-header d-flex flex-row shadow">
+    <!--col 1-->
+    <div class="col-lg-2 container justify-content-center align-items-center" style="display: flex;">
+      <a href="../Home/index.html">
+        <img id="layout-header-icon" style="width: 8rem;" class="normal-logo" src="/wwwroot/Images/icon.jpg"
+          alt="favor icon">
+      </a>
+    </div>
+    <!--col 2-->
+    <ul class="col-lg-8 d-flex flex-row main-menu m-0 p-0">
+      <li class="col-sm"><a href="../Home/index.html">TRANG CHỦ</a></li>
+      <li class="dropdown col-sm  m-0 align-items-center" style="display: flex;">
+        <a class="" href="/View/About/index.html">GIỚI THIỆU</a>
+        <ul class="dropdown-content" style="top: 80px;">
+          <li><a href="/View/About/index.html">vỀ TRUNG TÂM</a> </li>
+          <li><a href="../QnA/index.html">Q&A</a> </li>
+        </ul>
+      </li>
+      <li class="col-sm"><a href="../Cources/index.html">KHÓA HỌC</a></li>
+      <li class="col-sm"><a href="../Calendar/index.html">LỊCH KHAI GIẢNG</a></li>
+      <li class="col-sm"><a href="../Policy/main.html">QUY CHẾ HỌC PHÍ</a></li>
+    </ul>
+    <!--col 3-->
+    <div class="col-lg-2 justify-content-center align-items-center" style="display: flex;">
+      <button type="button" class="btn"
+        style="width: 160px; font-size: large; background-color: #EE0000; color: aliceblue;" data-bs-toggle="modal"
+        data-bs-target="#contactModal">Liên hệ ngay</button>
+
+
+    </div>
+  </div>
+  <!--end header-->
+
+
+
+
+
+
+
+
+
+
+  <!-- Modal contact-->
+
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Điền thông tin của bạn tại đây</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" style="font-size: 12px;"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="row">
+              <div class="col form-group mb-3">
+                <label for="Name" class="form-label">Họ và tên (<span style="color: red;">*</span>):</label>
+                <input type="text" name="Name" class="form-control" required>
+              </div>
+              <div class="col mb-3">
+                <label for="SDT" class="form-label">Số điện thoại (<span style="color: red;">*</span>):</label>
+                <input type="tel" name="SDT" class="form-control" required>
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="Email" class="form-label">Email:</label>
+              <input type="email" name="Email" class="form-control">
+            </div>
+            <div class="form-group mb-3">
+              <label for="Address" class="form-label">Địa chỉ:</label>
+              <input type="text" name="Address" class="form-control"
+                placeholder="Tỉnh/thành bạn đang sinh sống và làm việc?">
+            </div>
+            <div class="d-flex justify-content-end">
+              <button class="btn" data-toggle="modal" style="color: aliceblue; background-color: #EE0000;">Đăng
+                ký</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+<br>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--  -->
+
+ 
+  <div class="detail-container" data-layout="1" data-key="keycd">
+    <div class="detail-info flex justify-between">
+      <div class="social-card">
+        <div class="like-share">
+          <button class="like-button">Thích 17</button>
+          <button class="share-button">Chia sẻ</button>
+        </div>
+        <div class="timestamp">08:56 - 03/01/2024</div>
+      </div>
+    </div>
+  
+    <h2 class="detail-sapo" data-role="sapo">
+      (Chinhphu.vn) - Chính phủ đã ban hành Nghị định 97/2023/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 81/2021/NĐ-CP ngày 27/8/2021 của Chính phủ quy định về cơ chế thu, quản lý học phí đối với cơ sở giáo dục thuộc hệ thống giáo dục quốc dân và chính sách miễn, giảm học phí, hỗ trợ chi phí học tập; giá dịch vụ trong lĩnh vực giáo dục, đào tạo.
+    </h2>
+   
+  
+    <div class="detail-content afcbc-body" data-role="content">
+      <figure class="VCSortableInPreviewMode noCaption" type="Photo">
+        <div>
+          <a data-fancybox="img-lightbox" title="" target="_blank" class="detail-img-lightbox">
+            <img data-author="" src="/View/Policy/image/hoc-1704108656688833743525.jpg">
+          </a>
+        </div>
+      </figure>
+  
+      <h2>Học phí đối với giáo dục mầm non, phổ thông</h2>
+      <p class="MsoNormal">
+        <span>Theo khoản 3 Điều 9 Nghị định số&nbsp;</span>
+        <a class="link-inline-content" href="https://vanban.chinhphu.vn/default.aspx?pageid=27160&amp;docid=203950" title="81/2021/NĐ-CP" data-rel="follow" target="_blank">81/2021/NĐ-CP</a>
+        <span>, từ năm học 2023 - 2024 trở đi, khung học phí được điều chỉnh</span>
+        <span> theo tỷ lệ phù hợp với điều kiện kinh tế xã hội của địa phương, tốc độ tăng chỉ số giá tiêu dùng, tốc độ tăng trưởng kinh tế hàng năm và khả năng chi trả của người dân nhưng không quá 7,5%/năm.</span>
+      </p>
+      <p class="MsoNormal">
+        <span>Tại Nghị định 97/2023/NĐ-CP, Chính phủ sửa đổi quy định thành: </span>
+        <span>Đối với cơ sở giáo dục chưa tự bảo đảm chi thường xuyên: Giữ ổn định mức thu học phí từ năm học 2023 - 2024 bằng mức thu học phí của năm học 2021 - 2022 do Hội đồng nhân </span>
+        <span>dân tỉnh đã ban hành áp dụng tại địa phương.</span>
+      </p>
+      <p class="MsoNormal">
+        <span>Đối với cơ sở giáo dục tự bảo đảm chi thường xuyên, cơ sở giáo dục tự bảo đảm chi thường xuyên và chi đầu tư: Cơ sở giáo dục xây dựng mức thu học phí trên cơ sở định mức kinh tế - kỹ thuật, định mức chi phí, trình Ủy ban nhân dân để đề nghị Hội đồng nhân dân cấp tỉnh xem xét phê duyệt.</span>
+      </p>
+  
+      <div>
+        <a href="https://xdcs.cdnchinhphu.vn/446259493575335936/2024/1/2/tuyensinh1-16762886498671660614986-16890563433661464247402-1704160150341174202053.jpg"
+          data-fancybox="img-lightbox" title="" target="_blank" class="detail-img-lightbox">
+          <img data-author="" src="/View/Policy/image/tuyensinh1-16762886498671660614986-16890563433661464247402-1704160150341174202053.jpg"
+            id="img_666458757854769152" w="660" h="440">
+        </a>
+      </div>
+  
+      <h2><span>Học phí đối với giáo dục đại học</span></h2>
+      <p class="MsoNormal">
+        <span>Theo Nghị định 97/2023/NĐ-CP</span><span>, m</span><span>ức trần học phí năm học 2021 - 2022 và năm học 2022 - 2023 đối với các ngành đào tạo của các cơ sở giáo dục đại học công lập được áp dụng bằng mức trần học phí của các cơ sở giáo dục đại học công lập do Nhà nước quy định áp dụng cho năm học 2020 - 2021, mức cụ thể như sau:</span>
+      </p>
+      <h4 class="MsoNormal">
+        <span>Mức trần học phí đối với các khối ngành đào tạo trình độ đại học tại các cơ sở giáo dục đại học công lập chưa tự bảo đảm chi thường xuyên và chi đầu tư như sau:</span>
+      </h4>
+      <p class="MsoNormal" align="right">
+        <span>Đơn vị: nghìn đồng/sinh viên/tháng</span>
+      </p>
+      <div class="VCSortableInPreviewMode" type="BoxTable" headercolor="#000" headerbackcolor="" tdcolor="#000" tdbackcolor="#fff" tdbordercolor="#999">
+  
+      </div>
+    </div>
+  </div>
+  
+  <iframe src="/View/Policy/220916 QD 2863 Quy  dinh thu HP HP NH 2022-2023.pdf" width="800" height="600"></iframe>
+  
+
+  
+    <div class="news-card">
+      <div class="news-header">TIN ĐỌC NHIỀU</div>
+      <img src="/View/Policy/image/2-17046695352201769844789.jpg" alt="Hội nghị" class="news-img">
+      <div class="news-content">
+        <p>Chốt thời hạn ban hành Nghị định chế độ tiền lương mới, hoàn thành xây dựng vị trí việc làm, sắp xếp đơn vị hành chính.</p>
+        <div class="news-date">13:36 | 12/01/2024</div>
+        <ul class="news-list">
+          <li class="news-list-item">LỊCH NGHỈ TẾT NGUYÊN ĐÁN GIÁP THÌN 2024</li>
+          <li class="news-list-item">Chính phủ chỉ đạo khẩn trương sắp xếp đơn vị hành chính; triển khai chế độ tiền lương mới từ 1/7/2024</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+
+
+
+  
+
+       
+
+      <br>
+      <br>
+      <br>
+      <br>
+      
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <footer style="background-color: rgb(36, 71, 184);">
+        <div class="container-fluid px-4 pt-4 pb-3" style="color:white; width: 1200px;">
+          <h4 class="mb-4">CODETUS - Hệ thống đào tạo lập trình</h4>
+          <div>
+            <span><i class="fa fa-phone" style="margin-right: 23px; margin-bottom: 15px;"></i></span>
+            Hotline: 0333392123
+            <br>
+            <span><i class="fa fa-envelope-o" style="margin-right: 20px;"></i></li></span>
+            Email: daihoccongnghedonga@gmail.com
+          </div>
+          <hr>
+          <div style="font-size: 12px;" class="container-fluid">
+            <p style="display: flex;" class="justify-content-center align-items-center">Công ty CodeTus Việt Nam -
+              MST: 0001203033066</p>
+            <p style="display: flex;" class="justify-content-center align-items-center mb-0">Địa chỉ: Phố Trịnh Văn
+              Bô, phường Xuân Phương, quận Nam Từ Liêm, thành phố Hà Nội</p>
+          </div>
+        </div>
+      </footer>
+      <!--end footer-->
+
+
+      <script src="https://code.jquery.com/jquery-latest.js"></script>
+      <script src="../../wwwroot/dist/Bootstrap/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+      <script src="/wwwroot/JS/script.js"></script>
+</body>
+
+</html>

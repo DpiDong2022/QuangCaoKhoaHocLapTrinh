@@ -21,13 +21,13 @@
 }
 
 /* Clear floats after the columns */
-.row::after {
+.rowDong::after {
     content: "";
     display: table;
     clear: both;
 }
 
-.row {
+.rowDong {
     padding-left: 120px;
     padding-right: 120px;
 }

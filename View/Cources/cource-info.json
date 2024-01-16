@@ -10,7 +10,7 @@
     },
     {
         "Id": 2,
-        "Name": "Khóa học lập trình we trung bình với Python",
+        "Name": "Khóa học lập trình web trung bình với Python",
         "Price": "17.000.000 vnđ",
         "MucDich": "web",
         "Language": "python",
