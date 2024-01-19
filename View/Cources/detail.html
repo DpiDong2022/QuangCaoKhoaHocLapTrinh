@@ -29,7 +29,7 @@
             <li class="dropdown col-sm  m-0 align-items-center" style="display: flex;">
                 <a class="" href="../About/index.html">GIỚI THIỆU</a>
                 <ul class="dropdown-content" style="top: 80px;">
-                    <li><a href="../About/index.html">vỀ TRUNG TÂM</a> </li>
+                    <li><a href="../About/index.html">VỀ TRUNG TÂM</a> </li>
                     <li><a href="/View/QnA/index.html">Q&A</a> </li>
                 </ul>
             </li>
@@ -92,122 +92,84 @@
 
     <!--Main Content(code ở đây)-->
 
-    <!-- searh box -->
-    <div class="p-0 container justify-content-center align-items-center"
-        style="width: 60%; display: flex; height: 80px; position: relative;">
-        <input id="search-input" type="text" style="height:40px; width: 100%; padding-left: 10px;"
-            placeholder="Tìm kiếm khóa học mà bạn muốn">
-        <i class="fa fa-search search-icon" onclick="Search()"></i>
+    <div class="detail DongRow" style="margin-top: 30px; margin-bottom: 70px;">
+        <div class="column detail_main">
+            <h1 class="detail-header mb-4" style="color: rgb(175, 59, 59);">Khóa học: </h1>
+            <div class="position: relative; width: 100%; height: 200px">
+                <img src="Images/Java-Logo.png" alt="" style="width: 100%;">
+            </div>
+        </div>
+        <div class="column detail_site">
+            <ul style="width: 100%; border: 2px solid white; border-radius: 5px;" class="shadow">
+                <li class="price">
+                    Giá gốc: <span style="font-weight: bold; color: rgb(175, 59, 59);"></span>
+                </li>
+                <li class="disccount-price">
+                    Giá ưu đãi: <span style="font-weight: bold; color: rgb(175, 59, 59);"></span>
+                </li>
+                <li class="opening-date">
+                    Ngày khai giảng: <span></span>
+                </li>
+                <li>
+                    <p class="my-1">Lịch học trong tuần:</p>
+                    <p class="my-0">Thứ 3, Thứ 6, CN (19h - 21h)</p>
+                </li>
+                <li>
+                    <button type="button" class="btn mt-3"
+                        style="width: 160px; font-size: large; background-color: #EE0000; color: aliceblue; display: block; width: 100%; height: 47px;"
+                        data-bs-toggle="modal" data-bs-target="#contactModal">Đăng ký ngay</button>
+                </li>
+            </ul>
+        </div>
     </div>
 
-    <div class="container-fluid DongRow" style="">
+    <!-- select section -->
+    <div class="last-category" style="height: 67px; background-color: #f5f6fa; position: relative;">
+        <ul class="justify-content-center" style="display: flex;">
+            <li class="selected-li" onclick="ChangeSelected(this, 1)">Lộ trình học</li>
+            <li onclick="ChangeSelected(this, 2)">Giáo viên</li>
+            <li onclick="ChangeSelected(this, 3)">FeedBack</li>
+        </ul>
+    </div>
 
-        <!-- Category -->
-        <div class="column side category">
-            <div class="contain-category">
-                <h4>Filter</h4>
-                <!-- category 1 -->
-                <h5 class="category-group-name">Mục đích học</h5>
-                <div id="contain-mucdichhoc">
-                    <label for="">
-                        <input checked type="radio" value="all" name="MucDichHoc" id="" onclick="ChangeMucDichFilter('all')">
-                        Tất cả
-                    </label>
-                    <label for="">
-                        <input type="radio" value="web" name="MucDichHoc" id="" onclick="ChangeMucDichFilter('web')">
-                        Lập trình Web
-                    </label>
-                    <label for="">
-                        <input type="radio" value="mobile" name="MucDichHoc" id="" onclick="ChangeMucDichFilter('mobile')">
-                        Lập trình di động
-                    </label>
-                    <label for="">
-                        <input type="radio" value="data-science" name="MucDichHoc" id="" onclick="ChangeMucDichFilter('data-science')">
-                        Khoa học dữ liệu
-                    </label>
-                </div>
+    <div class="last-group-section mt-4 mb-5">
+        <!-- lộ trình học -->
+        <div id="lotrinh" class="">
+            <h3>Nội dung chi tiết khóa học</h3>
+            <div class="summarize">
+                <p class="title"></p>
+                <p class="description"></p>
+                <p class="during">Thời lượng: <span></span></p>
+                <p >Thời gian học: 3-5 tháng</p>
+                <p class="frequencyPerWeek">Số buổi trên tuần: <span></span></p>
+            </div>
+            <div class="stages">
                 
-                <!-- category 2 -->
-                <h5 class="category-group-name">Ngôn ngữ lập trình</h5>
-                <div id="contain-language">
-                    <label for="">
-                        <input checked type="radio" value="all" name="Language" id="" onclick="ChangeLanguageFilter('all')">
-                         Tất cả
-                    </label>
-                    <label for="">
-                        <input type="radio" value="python" name="Language" id="" onclick="ChangeLanguageFilter('python')">
-                        Python
-                    </label>
-                    <label for="">
-                        <input type="radio" value="javascript" name="Language" id="" onclick="ChangeLanguageFilter('javascript')">
-                        JavaScript
-                    </label>
-                    <label for="">
-                        <input type="radio" value="java" name="Language" id="" onclick="ChangeLanguageFilter('java')">
-                        Java
-                    </label>
-                    <label for="">
-                        <input type="radio" value="c#" name="Language" id="" onclick="ChangeLanguageFilter('c#')">
-                        C#
-                    </label>
-                    <label for="">
-                        <input type="radio" value="flutter" name="Language" id="" onclick="ChangeLanguageFilter('flutter')">
-                        Flutter
-                    </label>
-                    <label for="">
-                        <input type="radio" value="kotlin" name="Language" id="" onclick="ChangeLanguageFilter('kotlin')">
-                        Kotlin
-                    </label>
-                    <label for="">
-                        <input type="radio" value="html+css" name="Language" id="" onclick="ChangeLanguageFilter('html+css')">
-                        Html + CSS
-                    </label>
-                </div>
-
-                <!-- category 3 -->
-                <h5 class="category-group-name">Cấp độ</h5>
-                <div id="contain-level">
-                    <label for="">
-                        <input checked type="radio" value="all" name="Level" id="" onclick="ChangeLevelFilter('all')">
-                        Tất cả
-                    </label>
-                    <label for="">
-                        <input type="radio" value="basic" name="Level" id="" onclick="ChangeLevelFilter('basic')">
-                        Basic
-                    </label>
-                    <label for="">
-                        <input type="radio" value="medium" name="Level" id="" onclick="ChangeLevelFilter('medium')">
-                        Medium
-                    </label>
-                    <label for="">
-                        <input type="radio" value="high" name="Level" id="" onclick="ChangeLevelFilter('high')">
-                        High
-                    </label>
-                </div>
             </div>
-            
         </div>
 
-        <div class="column DongMain">
-            <p><b>Khóa học</b></p>
-
-            <div class="category shadow" id="not-found" style="display: block; background-color: white;
-             height: 70px; text-align: center; font-size: 25px; display: none;">
-                Không tìm thấy khóa học
+        <!-- Giáo viên -->
+        <div id="giaovien" class="DongRow" style="display: none;">
+            <div class="column detail_site d-flex justify-content-center">
+                <img class="shadow" style="max-width: 600px; width: 100%;" src="/wwwroot/Images/icon.jpg" alt="">
             </div>
 
-            <div class="grid-container course-container">
-                <!-- danh sách khóa hocj ở đây -->
+            <div class="column detail_main">
+                <h4>Đội ngũ CodeTus</h3>
+                <p style="text-align: justify; line-height: 30px;">Đội ngũ CodeTus gồm các kỹ sư ngành Công nghệ thông tin yêu thích việc giảng dạy, chia sẻ kiến thức về
+                    lập trình tới cộng đồng IT. Thông qua các kiến thức chia sẻ miễn phí cũng như các khóa học cực kì chất
+                    lượng của CodeTus, chúng tôi luôn mong muốn các bạn bè, học viên của mình sẽ trở thành những lập trình
+                    viên giỏi hơn trong tương lai.</p>
             </div>
+        </div>
+
+        <!-- FeedBack -->
+        <div id="feedback" class="" style="background-color: pink; display: none;">
+
         </div>
     </div>
 
-     <!-- phan trang -->
-    <div id="staff_pagination"
-        class="list-group list-group-horizontal justify-content-center"></div>
     <!--end Main content-->
-
-
 
     <!--Footer-->
     <footer style="background-color: rgb(36, 71, 184);">
@@ -237,6 +199,7 @@
     <script src="../../wwwroot/dist/Bootstrap/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
     <script src="/wwwroot/JS/script.js"></script>
     <script src="js.js"></script>
+    <script src="Detail.js"></script>
 
 </body>
 
