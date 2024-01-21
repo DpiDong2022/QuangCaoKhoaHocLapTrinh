@@ -1,0 +1,146 @@
+.sort-group {
+	text-align: center;
+	padding-top: 7px;
+	margin-bottom: 40px;
+}
+
+.sort-group a {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.sort-group--mr-01 {
+	margin-bottom: 26px;
+}
+
+.sort-item {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 200;
+	color: #727e85;
+	margin: 5px 10px;
+}
+
+.sort-item.is-checked {
+	color: #6666FF;
+}
+
+.sort-item:hover {
+	color: #6666FF;
+}
+
+.team-block {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.team-img {
+	-webkit-border-radius: 11px;
+	border-radius: 11px;
+	overflow: hidden;
+	margin-bottom: 27px;
+	position: relative;
+	max-width: 370px;
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+
+.team-img img {
+	display: block;
+	width: 100%;
+	max-width: 370px;
+	width: 100%;
+}
+
+.team-img::before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(14, 21, 30, 0);
+	-webkit-transition: 0.5s all;
+	transition: 0.5s all;
+	z-index: 10;
+}
+
+.team-img:hover .team-soc-list {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: 0.5s all;
+	transition: 0.5s all;
+}
+
+.team-img:hover::before {
+	background: rgba(14, 21, 30, 0.5);
+	-webkit-transition: 0.5s all;
+	transition: 0.5s all;
+}
+
+.team-title {
+	text-align: center;
+	margin: 0;
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 600;
+	color: #303638;
+}
+
+.team-title a {
+	color: #303638;
+}
+
+.team-title a:hover {
+	color: #6666FF;
+}
+
+.team-subtitle {
+	font-size: 14px;
+	line-height: 30px;
+	color: #6666FF;
+	text-align: center;
+}
+
+.team-soc-list {
+	margin: -5px 0 0 0;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 15;
+	text-align: center;
+	padding: 0;
+	width: 100%;
+	visibility: collapse;
+	opacity: 0;
+	-webkit-transition: 0.5s all;
+	transition: 0.5s all;
+}
+
+.team-soc-list li {
+	display: inline-block;
+	vertical-align: middle;
+	list-style: none;
+	margin: 0 12px;
+}
+
+.team-soc-list li a {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	color: #fff;
+}
+
+.team-soc-list li a:hover {
+	color: #6666FF;
+}
+.page-title-01 {
+	font-size: 48px;
+	line-height: 48px;
+	color: #303638;
+	margin: 76px 0 18px;
+	text-align: center;
+}

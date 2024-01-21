@@ -1,0 +1,376 @@
+/* Create three unequal columns that floats next to each other */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+    background-color: rgb(230, 233, 235);
+    height: 750px;
+}
+
+/* Middle column */
+.column.DongMain {
+    width: 75%;
+}
+
+/* Clear floats after the columns */
+.DongRow::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.last-group-section {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #555;
+    cursor: pointer;
+}
+
+.search-input {
+    padding: 10px;
+    padding-right: 30px;
+    border: 1px solid #6d4747;
+    outline: none;
+}
+
+.category {
+    padding-top: 20px;
+    padding-left: 35px;
+}
+
+.contain-category label {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    width: 180px;
+    margin-left: 10px;
+}
+
+.contain-category label:last-child {
+    margin-bottom: 10px;
+}
+
+.contain-category input {
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* background-color: #2196F3; */
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    height: 380px;
+    float: left;
+    margin-bottom: 30px;
+    cursor: pointer;
+    max-width: 320px;
+
+}
+
+.grid-item h5 {
+    font-size: 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.grid-item .item-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 4%;
+    cursor: pointer;
+}
+
+.item-footer {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.item-footer p,
+.item-footer i {
+    display: inline-block;
+    position: relative;
+    font-size: large;
+}
+
+.item-footer p {
+    float: right;
+    margin: 0;
+    right: 15px;
+    bottom: 5px;
+}
+
+.item-footer i {
+    float: left;
+    height: 100%;
+    left: 15px;
+}
+
+.course-container img {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 15px;
+}
+
+.course-container {
+    min-height: 760px;
+}
+
+.course-container a {
+    color: black;
+}
+
+.grid-item:hover {
+    box-shadow: 5px 5px 5px;
+    border: 1px solid whitesmoke;
+    transform: translateY(-10px);
+    transition-duration: 0.30s;
+}
+
+.grid-item:not(:hover) {
+    transition-duration: 0.25s;
+}
+
+#staff_pagination button {
+    background-color: rgb(74, 74, 206);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.column.detail_site {
+    margin: 20px;
+    width: 30%;
+    padding: 0;
+    min-width: 360px;
+}
+
+.column.detail_main {
+    width: 65%;
+    margin: 5px;
+    min-width: 360px;
+}
+
+.detail_site li {
+    padding: 10px;
+    border-bottom: 0.5px solid rgb(237, 229, 229);
+    position: relative;
+}
+
+.detail_site li span {
+    position: absolute;
+    right: 10px;
+}
+
+.detail_site li:last-child {
+    border-bottom: 0px solid rgb(216, 210, 210);
+}
+
+.detail_site ul {
+    padding: 20px;
+}
+
+.last-category li {
+    display: flex;
+    margin: 0px 26px;
+    cursor: pointer;
+    height: 100%;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+.selected-li {
+    border-bottom: 3px solid black;
+}
+
+.last-category ul {
+    position: relative;
+    height: 100%;
+    margin: 0;
+}
+
+#giaovien {
+    color: white;
+    animation: up 0.5s ease-in normal forwards;
+}
+
+#giaovien p {
+    color: red;
+    animation: up-p 0.5s ease-in normal forwards;
+}
+
+.detail .detail_site {
+    animation: up 0.8s ease-in-out normal forwards;
+}
+
+.detail .detail_main {
+    animation: left-to 0.6s ease-in-out normal forwards;
+}
+
+#lotrinh {
+    border: 1px solid rgb(209, 209, 209);
+    padding: 30px;
+}
+
+#lotrinh h4{
+    border-bottom: 1px solid rgb(231, 231, 231);
+    padding-bottom: 25px;
+}
+
+#lotrinh p, .stages li, #giaovien{
+    color: rgb(37, 53, 143);
+    line-height: 30px;
+    font-size: 115%;
+    line-height: 36px;
+}
+
+.detail {
+    padding-left: 115px;
+    padding-right: 115px;
+}
+
+.summarize p:last-child {
+    padding-bottom: 25px;
+}
+
+.summarize p:first-child {
+    padding-top: 18px;
+}
+
+.stages li {
+    color: rgb(37, 53, 143);
+    animation: down 0.1s ease-in-out normal forwards;
+   
+}
+
+.stages img{
+    width: 15px;
+}
+
+.disscount-card{
+    background-color: rgb(26, 106, 156);
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    position:absolute;
+    color: white;
+    display: flex;
+    padding-top: 5px;
+}
+
+@keyframes right-to {
+    0% {
+        transform: translateX(340px);
+    }
+
+    100% {
+        transform: translateX(0);
+        color: rgb(37, 53, 143);
+    }
+}
+
+@keyframes left-to {
+    0% {
+        transform: translateX(-340px);
+    }
+
+    100% {
+        transform: translateX(0);
+        color: rgb(37, 53, 143);
+    }
+}
+
+
+
+@keyframes up-p {
+    0% {
+        transform: translateY(240px);
+    }
+
+    100% {
+        transform: translateY(0);
+        color: rgb(37, 53, 143);
+    }
+}
+
+
+@keyframes down {
+    0% {
+        transform: translateY(-35px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(440px);
+    }
+
+    100% {
+        transform: translateY(0);
+        color: black;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 830px) {
+
+    .grid-item,
+    .column.side,
+    .column.detail_site,
+    .column.detail_main,
+    .column.middle {
+        width: 100%;
+    }
+
+    .grid-container {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+
+    .column.detail_main {
+        width: 100%;
+    }
+
+    .column.detail_site {
+        width: 96%;
+    }
+}

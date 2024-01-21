@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="wwwroot/dist/Bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Home/home.css">
+  <link rel="stylesheet" href="wwwroot/CSS/style.css">
+</head>
+
+<body>
+
+  <div class="loading loader--hidden"></div>
+  <!--header-->
+
+  <div class="dong-header shadow">
+    <a href="#" class="logo">
+      <img class="" src="wwwroot/Images/icon.jpg" alt="favor icon">
+    </a>
+
+    <i id="menu-mobile" class="fa fa-bars"></i>
+    <div class="dong-header-right">
+
+      <a id="Home-page" href="#">TRANG CHỦ</a>
+      <div class="dropdown">
+        <a href="About/index.html">GIỚI THIỆU</a>
+        <ul id="About-page" class="dropdown-content">
+          <a href="About/index.html" style="width: 100%;">VỀ TRUNG TÂM</a>
+          <a id="Teacher-page" href="Teacher/index.html" style="width: 100%;">GIẢNG VIÊN</a>
+          <a id="QnA-page" href="QnA/index.html" style="width: 100%;">Q&A</a>
+        </ul>
+      </div>
+      <a id="Cources-page" href="Cources/index.html">KHÓA HỌC</a>
+      <a id="Calendar-page" href="Calendar/index.html">LỊCH KHAI GIẢNG</a>
+      <button type="button" class="btn"
+        style="width: 160px; font-size: large; background-color: #EE0000; color: aliceblue;" data-bs-toggle="modal"
+        data-bs-target="#contactModal">Liên hệ ngay</button>
+    </div>
+  </div>
+
+  <!--end header-->
+
+  <!-- Modal contact-->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Điền thông tin của bạn tại đây</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" style="font-size: 12px;"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="row">
+              <div class="col form-group mb-3">
+                <label for="Name" class="form-label">Họ và tên (<span style="color: red;">*</span>):</label>
+                <input type="text" name="Name" class="form-control" required>
+              </div>
+              <div class="col mb-3">
+                <label for="SDT" class="form-label">Số điện thoại (<span style="color: red;">*</span>):</label>
+                <input type="tel" name="SDT" class="form-control" required>
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="Email" class="form-label">Email:</label>
+              <input type="email" name="Email" class="form-control">
+            </div>
+            <div class="form-group mb-3">
+              <label for="Address" class="form-label">Địa chỉ:</label>
+              <input type="text" name="Address" class="form-control"
+                placeholder="Tỉnh/thành bạn đang sinh sống và làm việc?">
+            </div>
+            <div class="d-flex justify-content-end">
+              <button class="btn" data-toggle="modal" style="color: aliceblue; background-color: #EE0000;">Đăng
+                ký</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end modal contact -->
+
+  <!-- home từ đây  -->
+
+
+  <main>
+    <div id="banner"></div>
+    <div id="why_us"></div>
+    <div id="category"></div>
+    <div id="course"></div>
+    <div id="testimonial"></div>
+    <div id="analysist"></div>
+    <div id="news"></div>
+  </main>
+  <footer id="footer"></footer>
+  <div class="container-dependence">
+    <h1 class="head-content--page">Trở thành lập trình viên ngay hôm nay</h1>
+    <div class="content-page">
+      <p class="hot002">Trung tâm đào tạo lập trình - Since 2004</p>
+    </div>
+    <button class="btn-banner" data-bs-toggle="modal" data-bs-target="#contactModal">Đăng ký ngay</button>
+    <div class="options-banner">
+      <div class="option-banner">
+        <img src="Home/images/quit-smoking_4811135.png" width="50" height="50" />
+        <div class="child-option-banner">
+          <h4>Học cái cần</h4>
+          <p>Không lãng phí thời gian</p>
+        </div>
+      </div>
+      <div class="option-banner">
+        <img src="Home/images/casting_5044533.png" width="50" height="50" />
+        <div class="child-option-banner">
+          <h4>Học cá nhân</h4>
+          <p>Không có lớp học chung</p>
+        </div>
+      </div>
+      <div class="option-banner">
+        <img src="Home/images/savings_1955277.png" width="50" height="50" />
+        <div class="child-option-banner">
+          <h4>Học tiết kiệm</h4>
+          <p>Không lãng phí tài chính</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--
+      banner
+      thay đổi container 
+      thay doi container-depen
+      -->
+
+  <div class="background"></div>
+
+
+  <br><br><br><br>
+
+  <!-- why_us -->
+
+  <div class="container">
+    <div class="container-dependence-whyUs">
+      <h3 class="head-whyUs"><span class="box05">Tại sao </span box06> lại chọn Chúng Tôi?</h3>
+      <div class="body-whyUs">
+        <div class="child-left">
+          <img src="Home/images/students-working-library.jpg" width="600" height="350" class="box003" />
+          <p class="des2">
+            LTS Edu trực thuộc tập đoàn công nghệ LTS Group – Tiền thân là học
+            viện lập trình được thành lập từ năm 2004, đứng đầu bởi anh Nguyễn
+            Khánh Nguyễn – CTO LTS Group kiêm CEO của LTS Edu – ra đời với phương
+            châm “ Ươm mầm tri thức, dẫn đường công nghệ”, đào tạo nguồn nhân lực
+            IT chất lượng cao, cung ứng cho thị trường công nghệ thông tin nói
+            chung và tập đoàn LTS GROUP nói riêng
+          </p>
+          <span class="des3">Chúng tôi tự tin là đơn vị được hàng ngàn học viên tin tưởng lựa
+            chọn, hợp tác với nhiều doanh nghiệp, cung ứng nhân sự cho nhiều đơn
+            vị trong thị trường IT toàn Việt Nam</span>
+        </div>
+        <div class="child-right">
+          <div class="card">
+            <h4 class="card-header">CAM KẾT CÔNG VIỆC NGAY SAU KHI TỐT NGHIỆP</h4>
+
+          </div>
+          <div class="card">
+            <h4 class="card-header">HỌC 1:1 LINH HOẠT CÙNG GIẢNG VIÊN 5 NĂM KINH NGHIỆM</h4>
+          </div>
+          <div class="card">
+            <h4 class="card-header">MÔ HÌNH ĐÀO TẠO LẬP TRÌNH THỰC CHIẾN</h4>
+          </div>
+          <div class="card">
+            <h4 class="card-header">HỆ THỐNG E-LEARNING ĐỘC QUYỀN</h4>
+          </div>
+        </div>
+      </div>
+      <br><br><br><br><br>
+    </div>
+  </div>
+
+
+  <!-- category  -->
+
+
+  <div class="container">
+    <div class="container-dependence-category">
+      <div class="head-category">
+
+        <h2>Chương trình đào tạo</h2>
+      </div>
+      <div class="body-category">
+        <div class="category-item" onclick="open_detail_page_mucdichhoc('web')">
+          <img src="Home/images/2590506.jpg" width="350" height="400" />
+          <div class="category-item-content">
+            <img src="Home/images/book_3145765.png" width="40" height="40" />
+            <div class="child-category-item">
+              <a href="#">Học lập trình Web - Fullstack Developer</a>
+              <p>5 khoá học</p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+
+
+        <!--  -->
+        <div class="category-item" onclick="open_detail_page_mucdichhoc('mobile')">
+          <img src="Home/images/263950-P4YKS7-510.jpg" width="350" height="400" />
+          <div class="category-item-content">
+            <img src="Home/images/book_3145765.png" width="40" height="40" />
+            <div class="child-category-item">
+              <a href="#">Học lập trình di động - Fullstack Developer</a>
+              <p>5 khoá học</p>
+            </div>
+          </div>
+        </div>
+        <div class="category-item" onclick="open_detail_page_mucdichhoc('data-science')">
+          <img src="Home/images/52223.jpg" width="350" height="400" />
+          <div class="category-item-content">
+            <img src="Home/images/book_3145765.png" width="40" height="40" />
+            <div class="child-category-item">
+              <a href="#">Học Khoa học dữ liệu và trí tuệ nhân tạo</a>
+              <p>4 khoá học</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- course  -->
+
+
+  <div class="container">
+    <div class="container-dependence-course">
+      <div class="head-course">
+        <h3>KHOÁ HỌC</h3>
+        <h2>Khoá Học Phổ Biến</h2>
+        <br> <br> <br>
+
+      </div>
+      <div class="body-course">
+        <div class="course-item">
+          <!--  -->
+          <div class="course-item">
+            <img onclick="open_detail_page(4)" src="Home/images/web-js.jpg" width="350" height="250" />
+            <div class="course-item-content">
+              <div onclick="open_detail_page(4)">
+                <span> lập trình web cơ bản với javascript</span>
+                <br>
+                <!--  -->
+                <a href="#">
+                  <!--  -->
+                  Khóa học lập trình web cơ bản với Javascript
+                </a>
+                <p class="des">
+                  Khóa học này tập trung vào việc hướng dẫn lập trình web cơ bản bằng Javascript. Bạn sẽ được giới thiệu
+                  với HTML, CSS, và JavaScript, cùng với việc sử dụng VueJS Framework. Khóa học cung cấp kiến thức về xử
+                  lý dữ liệu trên SQL Server, sử dụng Web API và Entity Framework, cũng như làm việc với ASP.NET, Razor
+                  Pages, và MVC để xây dựng cả frontend và backend của ứng dụng web.
+                </p>
+                <div class="meta-part">
+                  <div class="time">
+                    <p>Thời gian học</p>
+                    <p>~ 6 Tháng</p>
+                  </div>
+                  <div class="user">
+                    <p>Học viên</p>
+                    <p>1612 Đã học</p>
+                  </div>
+                </div>
+              </div>
+              <button class="test6" data-bs-toggle="modal" data-bs-target="#contactModal">Liên hệ ngay</button>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+        <div class="course-item">
+          <img onclick="open_detail_page(8)" src="Home/images/mobile-flutter.png" width="350" height="250" />
+          <div class="course-item-content">
+            <div onclick="open_detail_page(8)">
+              <span> lập trình di động cơ bản với Flutter</span>
+              <br>
+              <!--  -->
+              <a class="title" href="#">
+                <!--  -->
+                Khóa học lập trình di động cơ bản với Flutter
+              </a>
+              <p class="des">
+
+                Khóa học "Lập trình Di động với Flutter và Dart" là một hành trình từ cơ bản đến nâng cao, hướng dẫn
+                cách
+                xây dựng ứng dụng di động đa nền tảng. Bạn sẽ được thực hành việc tạo giao diện người dùng đẹp mắt và
+                tiến
+                triển đến quản lý trạng thái, tương tác với API một cách thông minh. Khóa học giúp bạn tự tin áp dụng
+                kiến
+                thức từ cơ bản đến những chi tiết cao cấp trong phát triển ứng dụng di động.
+
+              </p>
+              <div class="meta-part">
+                <div class="time">
+                  <p>Thời gian học</p>
+                  <p>~ 6 Tháng</p>
+                </div>
+                <div class="user">
+                  <p>Học viên</p>
+                  <p>1612 Đã học</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="test6" data-bs-toggle="modal" data-bs-target="#contactModal">Liên hệ ngay</button>
+          </div>
+        </div>
+
+
+
+        <div class="course-item">
+          <img onclick="open_detail_page(17)" src="Home/images/datascience-python3.png" width="350" height="250" />
+          <div class="course-item-content">
+            <div onclick="open_detail_page(17)">
+              <span>khóa học dữ liệu cao cấp với python</span>
+              <br>
+              <!--  -->
+              <a class="title" href="#">
+                <!--  -->
+                Khóa học khoa học dữ liệu cao cấp với python
+              </a>
+              <p class="des">
+                Khóa học "Khoa học Dữ liệu Cao cấp với Python" sẽ hướng dẫn bạn cách áp dụng Python trong việc xử lý và
+                phân tích dữ liệu lớn. Bạn sẽ tìm hiểu về thống kê, machine learning, và deep learning, sử dụng các thư
+                viện như Pandas, NumPy, Scikit-learn, TensorFlow, và PyTorch, Qua dự án thực tế, bạn sẽ có cơ hội áp
+                dụng
+                kiến thức vào giải quyết các vấn đề thực tế.
+              </p>
+              <div class="meta-part">
+                <div class="time">
+                  <p>Thời gian học</p>
+                  <p>~ 6 Tháng</p>
+                </div>
+                <div class="user">
+                  <p>Học viên</p>
+                  <p>1612 Đã học</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="test7" data-bs-toggle="modal" data-bs-target="#contactModal">Liên hệ ngay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- testimonial -->
+
+
+  <div class="container-testimonial">
+    <div class="container-dependence-testimonial">
+      <div class="head-testimonial">
+        <h3>CHIA SẺ</h3>
+        <h2>Học Viên Nói Gì Về Chúng Tôi</h2>
+      </div>
+      <div class="body-testimonial">
+        <div class="testimonial-item">
+          <div class="author-des">
+            <img src="Home/images/quote_6314351.png" width="65" height="65" />
+            <p>
+              Mình phải cám ơn đội ngũ của Lotus Academy rất nhiều, đã dẫn dắt
+              mình từ một sinh viên ham chơi trở thành một người mê lập trình!
+            </p>
+          </div>
+          <div class="author-part">
+            <img src="Home/images/297980647_1159854544590766_4118428861926705240_n.jpg" width="70" height="70"
+              class="box008" />
+            <p class="test3">Trung Kiên</p>
+            <p class="test4">Sinh viên CNTT</p>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <div class="author-des">
+            <img src="Home/images/quote_6314351.png" width="65" height="65" />
+            <p>
+              Nhờ có master với đội ngũ support của Lotus Academy mà em từ con số
+              0 đến được bây giờ trong khoảng 2 tháng
+            </p>
+          </div>
+          <div class="author-part">
+            <img src="Home/images/393350268_1110000966637894_6818939967249057424_n.jpg" width="70" height="70"
+              class="box009" />
+            <p class="test">Đại Đồng</p>
+            <p class="test2">Sinh viên CNTT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- analysist -->
+
+  <div class="container-analysist pt-80 pb-90 pt-md-70 pb-md-50 pb-sm-50">
+    <div class="row mt-20 text-center">
+      <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+        <div class="funfact">
+          <i class="pe-7s-smile mb-20 text-white"></i>
+          <h2 data-animation-duration="2000"
+            class="animate-number text-theme-colored2 font-42 font-weight-600 mt-0 mb-15"
+            style="color:  rgb(36, 71, 184) !important">
+            10.000++
+          </h2>
+          <h5 class="text-white text-uppercase">Học viên</h5>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+        <div class="funfact">
+          <i class="pe-7s-notebook mb-20 text-white"></i>
+          <h2 data-animation-duration="2000"
+            class="animate-number text-theme-colored2 font-42 font-weight-600 mt-0 mb-15"
+            style="color:  rgb(36, 71, 184) !important">
+            16++
+          </h2>
+          <h5 class="text-white text-uppercase">Năm giảng dạy</h5>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 mb-md-20">
+        <div class="funfact">
+          <i class="pe-7s-users mb-20 text-white"></i>
+          <h2 data-animation-duration="2000"
+            class="animate-number text-theme-colored2 font-42 font-weight-600 mt-0 mb-15 plus"
+            style="color: rgb(36, 71, 184) !important">
+            10
+          </h2>
+          <h5 class="text-white text-uppercase">
+            Học viên hiện là chủ doanh nghiệp, CEO
+          </h5>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 mb-md-20">
+        <div class="funfact">
+          <i class="pe-7s-study mb-20 text-white"></i>
+          <h2 data-animation-duration="2000"
+            class="animate-number text-theme-colored2 font-42 font-weight-600 mt-0 mb-15"
+            style="color:  rgb(36, 71, 184) !important">
+            5.000++
+          </h2>
+          <h5 class="text-white text-uppercase">
+            Developer, Test, QA, Designer, BA với mức lương cao &amp; rất cao
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- kết thúc  -->
+
+
+  <!--end Main content-->
+
+
+  <!--Footer-->
+  <footer style="background-color: rgb(36, 71, 184);">
+    <div class="container-fluid px-4 pt-4 pb-3" style="color:white; width: 1200px;">
+      <h4 class="mb-4">CODETUS - Hệ thống đào tạo lập trình</h4>
+      <div>
+        <span><i class="fa fa-phone" style="margin-right: 23px; margin-bottom: 15px;"></i></span>
+        Hotline: 0333392123
+        <br>
+        <span><i class="fa fa-envelope-o" style="margin-right: 20px;"></i></li></span>
+        Email: daihoccongnghedonga@gmail.com
+      </div>
+      <hr>
+      <div style="font-size: 12px;" class="container-fluid">
+        <p style="display: flex;" class="justify-content-center align-items-center">Công ty CodeTus Việt Nam -
+          MST: 0001203033066</p>
+        <p style="display: flex;" class="justify-content-center align-items-center mb-0">Địa chỉ: Phố Trịnh Văn
+          Bô, phường Xuân Phương, quận Nam Từ Liêm, thành phố Hà Nội</p>
+      </div>
+    </div>
+  </footer>
+  <!--end footer-->
+
+
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script src="wwwroot/dist/Bootstrap/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+  <script src="wwwroot/JS/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Nguyễn Văn Tưởng">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="../wwwroot/dist/Bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../wwwroot/CSS/style.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&family=Roboto&display=swap"
+    rel="stylesheet">
+
+</head>
+
+</head>
+
+<body>
+
+  <div class="loading loader--hidden"></div>
+  <!--header-->
+  <div class="dong-header shadow">
+    <a href="../index.html" class="logo">
+      <img class="" src="../wwwroot/Images/icon.jpg" alt="favor icon">
+    </a>
+
+    <i id="menu-mobile" class="fa fa-bars"></i>
+    <div class="dong-header-right">
+
+      <a id="home-page" href="../index.html">TRANG CHỦ</a>
+      <div class="dropdown">
+        <a href="../About/index.html">GIỚI THIỆU</a>
+        <ul class="dropdown-content">
+          <a id="About-page" href="../About/index.html" style="width: 100%;">VỀ TRUNG TÂM</a>
+          <a id="Teacher-page" href="../Teacher/index.html" style="width: 100%;">GIẢNG VIÊN</a>
+          <a id="QnA-page" href="../QnA/index.html" style="width: 100%;">Q&A</a>
+        </ul>
+      </div>
+      <a id="Cources-page" href="../Cources/index.html">KHÓA HỌC</a>
+      <a id="Calendar-page" href="#">LỊCH KHAI GIẢNG</a>
+      <button type="button" class="btn"
+        style="margin-left: 10px; width: 160px; font-size: large; background-color: #EE0000; color: aliceblue;" data-bs-toggle="modal"
+        data-bs-target="#contactModal">Liên hệ ngay</button>
+    </div>
+  </div>
+  <!--end header-->
+
+  <!-- Modal contact-->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Điền thông tin của bạn tại đây</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" style="font-size: 12px;"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="row">
+              <div class="col form-group mb-3">
+                <label for="Name" class="form-label">Họ và tên (<span style="color: red;">*</span>):</label>
+                <input type="text" name="Name" class="form-control" required>
+              </div>
+              <div class="col mb-3">
+                <label for="SDT" class="form-label">Số điện thoại (<span style="color: red;">*</span>):</label>
+                <input type="tel" name="SDT" class="form-control" required>
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="Email" class="form-label">Email:</label>
+              <input type="email" name="Email" class="form-control">
+            </div>
+            <div class="form-group mb-3">
+              <label for="Address" class="form-label">Địa chỉ:</label>
+              <input type="text" name="Address" class="form-control"
+                placeholder="Tỉnh/thành bạn đang sinh sống và làm việc?">
+            </div>
+            <div class="d-flex justify-content-end">
+              <button class="btn" data-toggle="modal" style="color: aliceblue; background-color: #EE0000;">Đăng
+                ký</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+
+
+  <div class="container-testimonial">
+    <div class="container-dependence-testimonial">
+      <div class="head-testimonial">
+      </div>
+      <div class="body-testimonial">
+        <div class="testimonial-item">
+          <div class="author-des p-4" style="background-color: black; opacity: 60%;">
+
+            <h1 class="test20"> CÁC LỚP LIÊN TỤC ĐƯỢC KHAI GIẢNG HÀNG THÁNG</h1>
+            <br>
+            <h3 class="test30"> HÃY LỰA CHỌN LỚP HỌC PHÙ HỢP TẠI CÁC TRUNG TÂM HÀ NỘI, HUẾ, HỒ CHÍ MINH</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="icon-container d-flex">
+      <div class="iconinterface1">
+        <img src="Images/forbidden-city_10038290.png" width="100" height="100" />
+        <h1>HÀ NỘi</h1>
+      </div>
+      <div class="iconinterface1">
+        <img src="Images/memorial-hall_6368158.png" width="100" height="100" />
+        <h1>HUẾ</h1>
+      </div>
+      <div class="iconinterface2">
+        <img src="Images/cityscape_948467.png" width="100" height="100" />
+        <h1>SÀI GÒN</h1>
+      </div>
+    </div>
+
+    <!--  -->
+
+
+    <!--  -->
+
+  </div>
+  </div>
+  <br><br><br>
+
+
+
+  <!--  -->
+  <div class="table-container container">
+    <table border="1" style="height: 371px;width: 800px;border-style: double;border-color: #00000059" class="table-1">
+      <tbody>
+        <tr style="height: 24px">
+          <td rowspan="2" style="text-align: center;height: 48px;width: 148.203px"><strong>Lớp Hà Nội</strong></td>
+          <td rowspan="2" style="text-align: center;height: 48px;width: 484.707px"><strong>Lịch học</strong></td>
+          <td colspan="3" style="text-align: center;height: 24px;width: 399.102px"><strong>Lịch khai giảng Quý
+              4.2023</strong></td>
+        </tr>
+        <tr style="height: 24px">
+          <td style="text-align: center;height: 24px;width: 131.191px">Tháng 10</td>
+          <td style="text-align: center;height: 24px;width: 130.195px">Tháng 11</td>
+          <td style="text-align: center;height: 24px;width: 126.23px">Tháng 12</td>
+        </tr>
+        <tr style="height: 136px">
+          <td style="height: 121px;width: 148.203px">Bootcamp Java Web Fullstack</td>
+          <td style="height: 121px;width: 484.707px">
+            <ul class="ul-1">
+              <li>6 tháng</li>
+              <li>8 tiếng/ngày, 5 ngày/tuần</li>
+              <li>Từ 08h00 – 17h30 thứ 2 – thứ 6</li>
+            </ul>
+          </td>
+          <td style="text-align: center;height: 121px;width: 131.191px">27/10</td>
+          <td style="text-align: center;height: 121px;width: 130.195px">28/11</td>
+          <td style="text-align: center;height: 121px;width: 126.23px">28/12</td>
+        </tr>
+        <tr style="height: 176px">
+          <td style="width: 148.203px;height: 176px">Bootcamp Javascript Fullstack</td>
+          <td style="width: 484.707px;height: 176px">
+            <ul class="ul-2">
+              <li>6 tháng</li>
+              <li>8 tiếng/ngày, 5 ngày/tuần</li>
+              <li>Từ 08h00 – 17h30 thứ 2 – thứ 6</li>
+            </ul>
+          </td>
+          <td style="text-align: center;height: 176px;width: 131.191px">28/10</td>
+          <td style="text-align: center;height: 176px;width: 130.195px">29/11</td>
+          <td style="text-align: center;height: 176px;width: 126.23px">29/12</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--  -->
+    <div class="table2">
+      <table border="1" style="height: 371px;width: 800px;border-style: double;border-color: #00000059">
+        <tbody>
+          <tr style="height: 24px">
+            <td rowspan="2" style="text-align: center;height: 48px;width: 148.203px"><strong>Lớp Huế</strong></td>
+            <td rowspan="2" style="text-align: center;height: 48px;width: 484.707px"><strong>Lịch học</strong></td>
+            <td colspan="3" style="text-align: center;height: 24px;width: 399.102px"><strong>Lịch khai giảng Quý
+                4.2023</strong></td>
+          </tr>
+          <tr style="height: 24px">
+            <td style="text-align: center;height: 24px;width: 131.191px">Tháng 10</td>
+            <td style="text-align: center;height: 24px;width: 130.195px">Tháng 11</td>
+            <td style="text-align: center;height: 24px;width: 126.23px">Tháng 12</td>
+          </tr>
+          <tr style="height: 136px">
+            <td style="height: 121px;width: 148.203px">Bootcamp Java Web Fullstack</td>
+            <td style="height: 121px;width: 484.707px">
+              <ul class="ul-3">
+                <li>6 tháng</li>
+                <li>8 tiếng/ngày, 5 ngày/tuần</li>
+                <li>Từ 08h00 – 17h30 thứ 2 – thứ 6</li>
+              </ul>
+            </td>
+            <td style="text-align: center;height: 121px;width: 131.191px">27/10</td>
+            <td style="text-align: center;height: 121px;width: 130.195px">28/11</td>
+            <td style="text-align: center;height: 121px;width: 126.23px">28/12</td>
+          </tr>
+          <tr style="height: 176px">
+            <td style="width: 148.203px;height: 176px">Bootcamp Javascript Fullstack</td>
+            <td style="width: 484.707px;height: 176px">
+              <ul class="ul-4">
+                <li>6 tháng</li>
+                <li>8 tiếng/ngày, 5 ngày/tuần</li>
+                <li>Từ 08h00 – 17h30 thứ 2 – thứ 6</li>
+              </ul>
+            </td>
+            <td style="text-align: center;height: 176px;width: 131.191px">28/10</td>
+            <td style="text-align: center;height: 176px;width: 130.195px">29/11</td>
+            <td style="text-align: center;height: 176px;width: 126.23px">29/12</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table3">
+      <table border="1" width="1044" style="height: 371px;width: 800px;border-style: double;border-color: #00000059">
+        <tbody>
+          <tr style="height: 24px">
+            <td rowspan="2" style="text-align: center;height: 48px;width: 148.203px"><strong>Lớp Sài Gòn</strong></td>
+            <td rowspan="2" style="text-align: center;height: 48px;width: 484.707px"><strong>Lịch học</strong></td>
+            <td colspan="3" style="text-align: center;height: 24px;width: 399.102px"><strong>Lịch khai giảng Quý
+                4.2023</strong></td>
+          </tr>
+          <tr style="height: 24px">
+            <td style="text-align: center;height: 24px;width: 131.191px">Tháng 10</td>
+            <td style="text-align: center;height: 24px;width: 130.195px">Tháng 11</td>
+            <td style="text-align: center;height: 24px;width: 126.23px">Tháng 12</td>
+          </tr>
+          <tr style="height: 136px">
+            <td style="height: 121px;width: 148.203px">Bootcamp Java Web Fullstack</td>
+            <td style="height: 121px;width: 484.707px">
+              <ul class="ul-3">
+                <li>6 tháng</li>
+                <li>8 tiếng/ngày, 5 ngày/tuần</li>
+                <li>Từ 08h00 – 17h30 thứ 2 – thứ 6</li>
+              </ul>
+            </td>
+            <td style="text-align: center;height: 121px;width: 131.191px">27/10</td>
+            <td style="text-align: center;height: 121px;width: 130.195px">28/11</td>
+            <td style="text-align: center;height: 121px;width: 126.23px">28/12</td>
+          </tr>
+          <tr style="height: 176px">
+            <td style="width: 148.203px;height: 176px">Bootcamp Javascript Fullstack</td>
+            <td style="width: 484.707px;height: 176px">
+              <ul class="ul-4">
+                <li>6 tháng</li>
+                <li>8 tiếng/ngày, 5 ngày/tuần</li>
+                <li>Từ 08h00 – 17h30 thứ 2 – thứ 6</li>
+              </ul>
+            </td>
+            <td style="text-align: center;height: 176px;width: 131.191px">28/10</td>
+            <td style="text-align: center;height: 176px;width: 130.195px">29/11</td>
+            <td style="text-align: center;height: 176px;width: 126.23px">29/12</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <!--  -->
+
+
+  <br><br><br><br>
+
+  <!--  -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer -->
+  <footer style="background-color: rgb(36, 71, 184);">
+    <div class="container-fluid px-4 pt-4 pb-3" style="color:white; width: 1200px;">
+      <h4 class="mb-4">CODETUS - Hệ thống đào tạo lập trình</h4>
+      <div>
+        <span><i class="fa fa-phone" style="margin-right: 23px; margin-bottom: 15px;"></i></span>
+        Hotline: 0333392123
+        <br>
+        <span><i class="fa fa-envelope-o" style="margin-right: 20px;"></i></li></span>
+        Email: daihoccongnghedonga@gmail.com
+      </div>
+      <hr>
+      <div style="font-size: 12px;" class="container-fluid">
+        <p style="display: flex;" class="justify-content-center align-items-center">Công ty CodeTus Việt Nam -
+          MST: 0001203033066</p>
+        <p style="display: flex;" class="justify-content-center align-items-center mb-0">Địa chỉ: Phố Trịnh Văn
+          Bô, phường Xuân Phương, quận Nam Từ Liêm, thành phố Hà Nội</p>
+      </div>
+    </div>
+  </footer>
+  <!--end footer-->
+
+
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script src="../wwwroot/dist/Bootstrap/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+  <script src="../wwwroot/JS/script.js"></script>
+</body>
+
+</html>
